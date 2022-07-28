@@ -93,7 +93,15 @@ $ readlink -m /usr/bin/awk
 without requirements on components existance.
 ```
 
-### - Brace Expansion
+<br>
+
+---
+
+<br>
+
+## String Manipulation
+
+### - Brace Expansion `{ }`
 - **Ex**: preamble{expansion}postscript{}
 
 > The pattern takes the form of an unchanging `preamble`, followed by a variable `expansion` component, followed by an unchanging `postscript`. <br>
@@ -110,5 +118,19 @@ Street-Rio_Novo-Brazil Street-Vila_Bela-Brazil Street-Benedito-Brazil
 - present in the same order specified in the pattern.
 
 -------------------------------------------------------------------------------
-$ a
+$ echo Street-{Rio_Novo,Vila_Bela,Benedito}
+Street-Rio_Novo Street-Vila_Bela Street-Benedito
+
+- Both the preamble and postscript are optional.
+- Here, we expand a pattern with a preamble, but with no postscript
+
+-------------------------------------------------------------------------------
+$ echo {Rio_Novo,Vila_Bela,Benedito}-Brazil
+Rio_Novo-Brazil Vila_Bela-Brazil Benedito-Brazil
+
+- Here, we expand a pattern with a postscript, but with no preamble
+
+-------------------------------------------------------------------------------
+$ echo {Rio_Novo,Vila_Bela,Benedito}-Brazil
+Rio_Novo-Brazil Vila_Bela-Brazil Benedito-Brazil
 ```
