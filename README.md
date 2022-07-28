@@ -159,7 +159,6 @@ I love Rio_Novo. I love Vila_Bela. I love Benedito.
 ```
 
 > It can also contain a range of integers or characters using the operator `..`
-
 ```console
 $ echo Number-{1..5}
 Number-1 Number-2 Number-3 Number-4 Number-5
@@ -183,6 +182,10 @@ aA1b aA2b aB3b aB4b
   which expands to two(2) strings. Uppercase A1 and uppercase A2.
 ```
 
+> Practical example:
+```console
+$ mkdir {2008..2017}-{01..12}
+```
 
 
 
