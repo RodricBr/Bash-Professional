@@ -131,6 +131,8 @@ Rio_Novo-Brazil Vila_Bela-Brazil Benedito-Brazil
 - Here, we expand a pattern with a postscript, but with no preamble
 
 -------------------------------------------------------------------------------
-$ echo {Rio_Novo,Vila_Bela,Benedito}-Brazil
-Rio_Novo-Brazil Vila_Bela-Brazil Benedito-Brazil
+$ echo {Rio_Novo,Vila_Bela,Benedito}
+Rio_Novo Vila_Bela Benedito
+
+- Here, we expand a pattern with a no preamble and no postscript
 ```
