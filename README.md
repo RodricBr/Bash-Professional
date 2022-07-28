@@ -189,6 +189,9 @@ aA1b aA2b aB3b aB4b
 > Practical example:
 ```console
 $ mkdir {2008..2017}-{01..12}
+
+- With this single command, we are abble to create a list of directories for
+  all of the months over a range of 10 years!
 ```
 
 
