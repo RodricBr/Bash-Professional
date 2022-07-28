@@ -197,7 +197,7 @@ $ mkdir {2008..2017}-{01..12}
 ### Command Substitution `$() // ${}`
 > Command substitution allows us to use the output of a command as an argument of another command
 
-- Note: The command Substitution is very different from piping.
+- Note: The command substitution is very different from piping. <br>
   Piping, allows us to redirect the output of one command, to the standard input of another
 
 ```console
