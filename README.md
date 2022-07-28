@@ -229,6 +229,11 @@ LEN_=$(expr "$RESP_" : '.*')
 echo "The length of the input string is: $LEN_"
 ```
 
+<br>
+
+> The `$` sign is a symbol with special significance to bash. <br>
+> But there are other characters that also have special significance to bash. <br>
+> These include: "`$`", "`!`", "`&`", "`\`", "` `"(Space, which bash uses to delimit tokens)
 
 
 
