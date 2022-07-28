@@ -202,6 +202,23 @@ $ echo ${#USER}
 
 (echo environment variable $USER, that prints the current logged user,
 and also counting the amount of caracters of this output "#")
+
+- The value for $HOME, $USER, $SHELL, $PATH, $LOGNAME, and $MAIL
+  are set according to the appropriate fields in the password entry(login).
+  $ man login(1)
+
+- Example of a simple program that reads from standard input and counts
+  the amount of characters a user puts in.
+
+#!/usr/bin/bash
+
+echo "Enter a string: " && read RESP_
+
+LEN_=$(expr "$RESP_" : '.*')
+
+echo "The length of the input string is $LEN_"
+
+-------------------------------------------------------------------------------
 ```
 
 
