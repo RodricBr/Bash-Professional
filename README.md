@@ -195,6 +195,7 @@ $ mkdir {2008..2017}-{01..12}
 ```
 
 ### Command Substitution `$() // ${}`
+> Command substitution allows us to use the output of a command as an argument of another command
 ```console
 echo ${#USER}
 ```
