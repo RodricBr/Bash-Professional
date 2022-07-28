@@ -101,5 +101,6 @@ without requirements on components existance.
 > The constant part before the opening brace is called `preamble`, and the constant part trailing <br>
 > after the closing brace is a `postscript`. <br>
 ```console
-$ 
+$ echo Street-{Rio_Novo,Vila_Bela,Benedito}-Brazil
+Street-Rio_Novo-Brazil Street-Vila_Bela-Brazil Street-Benedito-Brazil
 ```
