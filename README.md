@@ -102,7 +102,7 @@ $ readlink -m /usr/bin/awk
 ## String Manipulation
 
 ### - Brace Expansion `{ }`
-- **Ex**: preamble{expansion}postscript{}
+- **Ex**: preamble{expansion}postscript
 
 > The pattern takes the form of an unchanging `preamble`, followed by a variable `expansion` component, followed by an unchanging `postscript`. <br>
 > The varying part of the pattern is enclosed by a pair of curly braces. <br>
@@ -161,7 +161,26 @@ I love Rio_Novo. I love Vila_Bela. I love Benedito.
 > It can also contain a range of integers or characters using the operator `..`
 
 ```console
-$ 
+$ echo Number-{1..5}
+Number-1 Number-2 Number-3 Number-4 Number-5
+
+-------------------------------------------------------------------------------
+$ echo {a..z}
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+- We can also use a sequence of characters, with the ".." operator.
+
+-------------------------------------------------------------------------------
+$ echo a{A{1,2},B{3,4}}b
+aA1b aA2b aB3b aB4b
+
+- In the expansion, the preamble (lowercase a), and the
+  postscirpt (lowercase b), are constant.
+- In the variable part of the expression,
+  the brace expression is a list of items separated by comma
+  "A{1,2}" AND "B{3,4}".
+- Bash starts with the first item ("A{1,2}"), and this is a brace expanssion as well,
+  which expands to two(2) strings. Uppercase A1 and uppercase A2.
 ```
 
 
