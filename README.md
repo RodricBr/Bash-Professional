@@ -154,8 +154,8 @@ I love Rio_Novo Vila_Bela Benedito
 - But we can fix that by placing the quoted string
   immediately adjecent to the brace expansion, like so:
 
-$ echo "I love "{Rio_Novo,Vila_Bela,Benedito}
-I love Rio_Novo I love Vila_Bela I love Benedito
+$ echo "I love "{Rio_Novo,Vila_Bela,Benedito}.
+I love Rio_Novo. I love Vila_Bela. I love Benedito.
 ```
 
 
