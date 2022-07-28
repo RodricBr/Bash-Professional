@@ -32,7 +32,7 @@ navigate through them using: ":p" (Previous) and
 ## MISC
 
 ### - Linked Files / Symbolic Links
-> Symbolic links - Like shortcuts in Windows, and aliases in MacOS - provide mechanism for referring to another file. <br>
+> Symbolic links -like shortcuts in **Windows**, and aliases in **MacOS**- provide mechanism for referring to another file. <br>
 > Symbolic links can be easily identified by using `ls -l`, and by using the `file` command.
 ```console
 $ ls -l /usr/bin/awk
