@@ -1,7 +1,8 @@
-## Less
+## (Less)[https://linux.die.net/man/1/less]
 ```bash
 $ less file_2.txt
 
+- Press "q" to exit less
 - Use "g" to get to the first line of the file
 - Use "SHIFT G" to get to the last line of the file
 
