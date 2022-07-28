@@ -32,6 +32,9 @@ navigate through them using: ":p" (Previous) and
 ## MISC
 
 ### Linked files
+> Symbolic links - Like shortcuts in Windows, and aliases in MacOS - provide
+> mechanism for referring to another file. Symbolic links can be easily
+> identified by using **ls -l**, and by using the **file** command.
 ```console
 $ ls -l /usr/bin/awk
 ("-l" directing ls to use long listing format)
