@@ -200,6 +200,11 @@ $ mkdir {2008..2017}-{01..12}
 - Note: The command substitution is very different from piping. <br>
   Piping, allows us to redirect the output of one command, to the standard input of another
 
+
+- The `$` sign is a symbol with special significance to bash. <br>
+  But there are other characters that also have special significance to bash. <br>
+  These include: "`$`", "`!`", "`&`", "`\`", "` `"(Space, which bash uses to delimit tokens)
+
 ```console
 $ echo $(ls /etc/X11)
 
@@ -230,10 +235,6 @@ echo "The length of the input string is: $LEN_"
 ```
 
 <br>
-
-> The `$` sign is a symbol with special significance to bash. <br>
-> But there are other characters that also have special significance to bash. <br>
-> These include: "`$`", "`!`", "`&`", "`\`", "` `"(Space, which bash uses to delimit tokens)
 
 
 
