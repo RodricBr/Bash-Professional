@@ -146,7 +146,12 @@ I love Rio_Novo Vila_Bela Benedito
 - As a result, the brace expansion is performed but "I love" is not
   considered a preamble to the brace expansion.
 - If we close "I love" in quotes, bash will sees as two(2) tokens.
-  1st- "I love"  2st- "{Rio_Novo,Vila_Bela,Benedito}"
+  1st- "I love"  2st- "{Rio_Novo,Vila_Bela,Benedito}".
+
+- And so, bash still doesn't consider "I love" being a preamble
+  to the brace expansion.
+- But we can fix that by placing the quoted string
+  immediately adjecent to the brace expansion.
 ```
 
 
