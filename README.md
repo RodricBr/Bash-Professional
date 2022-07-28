@@ -196,6 +196,15 @@ $ mkdir {2008..2017}-{01..12}
 
 ### Command Substitution `$() // ${}`
 > Command substitution allows us to use the output of a command as an argument of another command
+
+- Note: The command Substitution is very different from piping.
+  Piping, allows us to redirect the output of one command, to the standard input of another
+
+```console
+$ echo $(ls /etc/X11)
+
+- Command substitution causes this output to be used as the argument to echo
+```
 ```console
 $ echo ${#USER}
 6
@@ -206,19 +215,18 @@ and also counting the amount of caracters of this output "#")
 - The value for $HOME, $USER, $SHELL, $PATH, $LOGNAME, and $MAIL
   are set according to the appropriate fields in the password entry(login).
   $ man login(1)
-
+```
+```console
 - Example of a simple program that reads from standard input and counts
   the amount of characters a user puts in.
 
 #!/usr/bin/bash
 
-echo "Enter a string: " && read RESP_
+read -rp "Enter a string: " RESP_
 
 LEN_=$(expr "$RESP_" : '.*')
 
-echo "The length of the input string is $LEN_"
-
--------------------------------------------------------------------------------
+echo "The length of the input string is: $LEN_"
 ```
 
 
