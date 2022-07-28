@@ -157,7 +157,7 @@ I love Rio_Novo Vila_Bela Benedito
 $ echo "I love "{Rio_Novo,Vila_Bela,Benedito}.
 I love Rio_Novo. I love Vila_Bela. I love Benedito.
 ```
-
+<br>
 > It can also contain a range of integers or characters using the operator `..`
 ```console
 $ echo Number-{1..5}
@@ -181,7 +181,7 @@ aA1b aA2b aB3b aB4b
 - Bash starts with the first item ("A{1,2}"), and this is a brace expanssion as well,
   which expands to two(2) strings. Uppercase A1 and uppercase A2.
 ```
-
+<br>
 > Practical example:
 ```console
 $ mkdir {2008..2017}-{01..12}
