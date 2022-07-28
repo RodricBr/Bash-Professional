@@ -23,6 +23,31 @@ navigate through them using: ":p" (Previous) and
 
 ```
 
+### - [Diff](https://linux.die.net/man/1/diff)
+```console
+$ diff -s file_1.txt file_2.txt
+(Checking the difference of two given files)
+
+- The flag "-s" OR "--report-identical-files", reports when two files are the same.
+
+-------------------------------------------------------------------------------
+Ex:
+$ cat file_1.txt file_2.txt
+Test
+Change-me
+
+Test
+Changed-you
+Added another line
+
+$ diff -s file_1.txt file_2.txt
+2c2,3
+< Change-me
+---
+> Changed-you
+> Added another line
+```
+
 <br>
 
 ---
