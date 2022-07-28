@@ -194,7 +194,7 @@ $ mkdir {2008..2017}-{01..12}
   all of the months over a range of 10 years!
 ```
 
-### Command Substitution `$() // ${}`
+### - Command Substitution `$() // ${}`
 > Command substitution allows us to use the output of a command as an argument of another command
 
 > The `$` sign is a symbol with special significance to bash. <br>
