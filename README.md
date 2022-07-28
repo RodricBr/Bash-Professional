@@ -158,6 +158,12 @@ $ echo "I love "{Rio_Novo,Vila_Bela,Benedito}.
 I love Rio_Novo. I love Vila_Bela. I love Benedito.
 ```
 
+> It can also contain a range of integers or characters using the operator `..`
+
+```console
+$ 
+```
+
 
 
 
