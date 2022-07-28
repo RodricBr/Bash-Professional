@@ -207,6 +207,16 @@ $ mkdir {2008..2017}-{01..12}
 $ echo $(ls /etc/X11)
 
 - Command substitution causes this output to be used as the argument to echo
+
+-------------------------------------------------------------------------------
+$ echo Greetings\ \&\ salutations\ {Rodric,Doom}\!
+Greetings & salutations Rodric! Greetings & salutations Doom!
+
+- Using space character "\" to escape literal space, since there is not usage
+  of quoted string, and so bash considers it as a single token. Also proving
+  that the "Greetings & salutations", which are the preamble of the
+  brace expansion, still gets interpretated by bash.
+
 ```
 ```console
 $ echo ${#USER}
