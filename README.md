@@ -197,7 +197,11 @@ $ mkdir {2008..2017}-{01..12}
 ### Command Substitution `$() // ${}`
 > Command substitution allows us to use the output of a command as an argument of another command
 ```console
-echo ${#USER}
+$ echo ${#USER}
+6
+
+(echo environment variable $USER, that prints the current logged user,
+and also counting the amount of caracters of this output "#")
 ```
 
 
