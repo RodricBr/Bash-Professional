@@ -59,5 +59,11 @@ $ file /usr/bin/gawk
 /usr/bin/gawk: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV),
 dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2,
 BuildID[sha1]=b863ebf57d3cc33d8e7fed3be0e0b5d235489b46, for GNU/Linux 3.2.0
-                                                    
+
+-------------------------------------------------------------------------------
+$ readlink -m /usr/bin/awk
+(Reading symbolic link of /usr/bin/awk)
+"-m" follows every symlink(symbolical link) in every component,
+without requirements on components existance.
+
 ```
