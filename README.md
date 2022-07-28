@@ -92,3 +92,9 @@ $ readlink -m /usr/bin/awk
 - The flag "-m" follows every symlink(symbolical link) in every component,
 without requirements on components existance.
 ```
+
+### - Brace Expansion
+> A
+```console
+$ 
+```
