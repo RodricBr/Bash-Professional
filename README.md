@@ -18,8 +18,8 @@ on the left side of the screen)
 $ less file_*.txt
 
 - Less can open multiple files at once, and you can
-navigate through them using: ":p" (Previous) and
-":n" (Next)
+  navigate through them using: ":p" (Previous) and
+  ":n" (Next)
 
 ```
 
@@ -66,7 +66,7 @@ $ ls -l /usr/bin/awk
 lrwxrwxrwx 1 root root 21 Jun  3  2021 /usr/bin/awk -> /etc/alternatives/awk
                                                     ^^
 - The arrow means that /usr/bin/awk is not a regular file, instead
-it is a symbolic link, that points to another file.
+  it is a symbolic link, that points to another file.
 - In this case, /usr/bin/awk points to /etc/alternatives/awk
 
 -------------------------------------------------------------------------------
@@ -90,7 +90,7 @@ $ readlink -m /usr/bin/awk
 (Reading symbolic link of /usr/bin/awk)
 
 - The flag "-m" follows every symlink(symbolical link) in every component,
-without requirements on components existance.
+  without requirements on components existance.
 ```
 
 <br>
@@ -112,10 +112,10 @@ without requirements on components existance.
 $ echo Street-{Rio_Novo,Vila_Bela,Benedito}-Brazil
 Street-Rio_Novo-Brazil Street-Vila_Bela-Brazil Street-Benedito-Brazil
 
-- This pattern has been expanded into three(3) different text strings
+- This pattern has been expanded into three(3) different text strings.
 - Each string has the same preamble at the begining, and the same post
-- script at the end. The middle part of the string varies, and is
-- present in the same order specified in the pattern.
+  script at the end. The middle part of the string varies, and is
+  present in the same order specified in the pattern.
 
 -------------------------------------------------------------------------------
 $ echo Street-{Rio_Novo,Vila_Bela,Benedito}
@@ -136,3 +136,19 @@ Rio_Novo Vila_Bela Benedito
 
 - Here, we expand a pattern with a no preamble and no postscript
 ```
+
+```console
+$ echo I love {Rio_Novo,Vila_Bela,Benedito}
+I love Rio_Novo Vila_Bela Benedito
+
+- In here, bash considers "I love" and "{Rio_Novo,Vila_Bela,Benedito}"
+  to be separate tokens.
+- As a result, the brace expansion is performed but "I love" is not
+  considered a preamble to the brace expansion.
+```
+
+
+
+
+
+
