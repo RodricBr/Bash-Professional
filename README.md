@@ -145,6 +145,8 @@ I love Rio_Novo Vila_Bela Benedito
   to be separate tokens.
 - As a result, the brace expansion is performed but "I love" is not
   considered a preamble to the brace expansion.
+- If we close "I love" in quotes, bash will sees as two(2) tokens.
+  1st- "I love"  2st- "{Rio_Novo,Vila_Bela,Benedito}"
 ```
 
 
