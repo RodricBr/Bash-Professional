@@ -194,6 +194,10 @@ $ mkdir {2008..2017}-{01..12}
   all of the months over a range of 10 years!
 ```
 
+### Command Substitution `$() // ${}`
+```console
+echo ${#USER}
+```
 
 
 
