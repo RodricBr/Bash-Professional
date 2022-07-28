@@ -103,4 +103,12 @@ without requirements on components existance.
 ```console
 $ echo Street-{Rio_Novo,Vila_Bela,Benedito}-Brazil
 Street-Rio_Novo-Brazil Street-Vila_Bela-Brazil Street-Benedito-Brazil
+
+- This pattern has been expanded into three(3) different text strings
+- Each string has the same preamble at the begining, and the same post
+- script at the end. The middle part of the string varies, and is
+- present in the same order specified in the pattern.
+
+-------------------------------------------------------------------------------
+$ a
 ```
