@@ -63,7 +63,7 @@ BuildID[sha1]=b863ebf57d3cc33d8e7fed3be0e0b5d235489b46, for GNU/Linux 3.2.0
 -------------------------------------------------------------------------------
 $ readlink -m /usr/bin/awk
 (Reading symbolic link of /usr/bin/awk)
-"-m" follows every symlink(symbolical link) in every component,
-without requirements on components existance.
 
+- The flag "-m" follows every symlink(symbolical link) in every component,
+without requirements on components existance.
 ```
