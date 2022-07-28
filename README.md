@@ -94,7 +94,12 @@ without requirements on components existance.
 ```
 
 ### - Brace Expansion
-> A
+- Ex: preamble{expansion}postscript{}
+
+> The pattern takes the form of an unchanging `preamble`, followed by a variable `expansion` component, followed by an unchanging `postscript`. <br>
+> The varying part of the pattern is enclosed by a pair of curly braces. <br>
+> The constant part before the opening brace is called `preamble`, and the constant part trailing <br>
+> after the closing brace is a `postscript`. <br>
 ```console
 $ 
 ```
