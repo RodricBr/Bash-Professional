@@ -94,7 +94,7 @@ without requirements on components existance.
 ```
 
 ### - Brace Expansion
-- Ex: preamble{expansion}postscript{}
+- **Ex**: preamble{expansion}postscript{}
 
 > The pattern takes the form of an unchanging `preamble`, followed by a variable `expansion` component, followed by an unchanging `postscript`. <br>
 > The varying part of the pattern is enclosed by a pair of curly braces. <br>
