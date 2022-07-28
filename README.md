@@ -1,4 +1,4 @@
-## [Less](https://linux.die.net/man/1/less)
+## - [Less](https://linux.die.net/man/1/less)
 ```bash
 $ less file_2.txt
 
