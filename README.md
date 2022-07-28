@@ -1,7 +1,7 @@
 ## Bash Commands
 
 ### - [Less](https://linux.die.net/man/1/less)
-```bash
+```console
 $ less file_2.txt
 (Showing contents of file_2.txt)
 
@@ -32,7 +32,7 @@ navigate through them using: ":p" (Previous) and
 ## MISC
 
 ### Linked files
-```bash
+```console
 $ ls -l /usr/bin/awk
 ("-l" directing ls to use long listing format)
 
