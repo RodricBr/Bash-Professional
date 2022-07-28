@@ -199,7 +199,7 @@ $ mkdir {2008..2017}-{01..12}
 
 > The `$` sign is a symbol with special significance to bash. <br>
 > But there are other characters that also have special significance to bash. <br>
-> These include: "`$`", "`!`", "`&`", "`\`", "` `"(Space, which bash uses to delimit tokens)
+> These include: `$`, `!`, `&`, `\`, ` `(Space, which bash uses to delimit tokens)
 
 - Note: The command substitution is very different from piping. <br>
   Piping, allows us to redirect the output of one command, to the standard input of another.
