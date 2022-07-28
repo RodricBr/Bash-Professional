@@ -23,7 +23,9 @@ navigate through them using: ":p" (Previous) and
 
 ```
 
+<br>
 ---
+<br>
 
 ## MISC
 
