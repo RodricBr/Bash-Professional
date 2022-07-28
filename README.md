@@ -24,7 +24,9 @@ navigate through them using: ":p" (Previous) and
 ```
 
 <br>
+
 ---
+
 <br>
 
 ## MISC
@@ -44,5 +46,16 @@ it is a symbolic link, that points to another file.
 $ file /usr/bin/awk
 /usr/bin/awk: symbolic link to /etc/alternatives/awk
 (Determine the type of a file using the commando "file")
+
+-------------------------------------------------------------------------------
+$ file /etc/alternatives/awk
+/etc/alternatives/awk: symbolic link to /usr/bin/gawk
+
+- A symbolic link to /usr/bin/gawk, which is an ELF executable file
+
+$ file /usr/bin/gawk
+/usr/bin/gawk: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV),
+dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2,
+BuildID[sha1]=b863ebf57d3cc33d8e7fed3be0e0b5d235489b46, for GNU/Linux 3.2.0
                                                     
 ```
