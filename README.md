@@ -194,15 +194,12 @@ $ mkdir {2008..2017}-{01..12}
   all of the months over a range of 10 years!
 ```
 
-### - Command Substitution `$() // ${}`
+### - Command Substitution `$()` & Parameter Expansion `${}`
 > Command substitution allows us to use the output of a command as an argument of another command
 
 > The `$` sign is a symbol with special significance to bash. <br>
 > But there are other characters that also have special significance to bash. <br>
 > These include: `$`, `!`, `&`, `\`, ` `(Space, which bash uses to delimit tokens) <br>
-
-> There are other special characters that retain their special meaning inside double quotes. <br>
-> These exceptions includes: `$`, `${}`, `$()`, `$(())`, `\`(When used to escape special characters). <br>
 
 - Note: The command substitution is very different from piping. <br>
   Piping, allows us to redirect the output of one command, to the standard input of another.
@@ -244,6 +241,10 @@ LEN_=$(expr "$RESP_" : '.*')
 
 echo "The length of the input string is: $LEN_"
 ```
+
+> There are other special characters that retain their special meaning inside double quotes. <br>
+> These exceptions includes: `$`, `${}`, `$()`, `$(())`, `\`(When used to escape special characters). <br>
+
 
 <br>
 
