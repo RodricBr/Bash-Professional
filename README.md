@@ -239,7 +239,7 @@ the forth(3) character)
 - Keeping in mind that the first character starts by "0" (0, 1, 2, 3, 4... etc)
 
 ```
-- (Examples)[https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html]
+- [Cool examples of Parameter Expansion](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
 ```console
 - Example of a simple program that reads from standard input and counts
   the amount of characters a user puts in.
