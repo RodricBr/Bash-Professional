@@ -202,7 +202,7 @@ $ mkdir {2008..2017}-{01..12}
 > These include: `$`, `!`, `&`, `\`, ` `(Space, which bash uses to delimit tokens) <br>
 
 > There are other special characters that retain their special meaning inside double quotes. <br>
-> These exceptions includes: `$`, `${}`, `$()`, `$(())`, `\`. <br>
+> These exceptions includes: `$`, `${}`, `$()`, `$(())`, `\`(When used to escape special characters). <br>
 
 - Note: The command substitution is very different from piping. <br>
   Piping, allows us to redirect the output of one command, to the standard input of another.
