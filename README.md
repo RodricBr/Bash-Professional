@@ -1,6 +1,6 @@
 <h2 align="center">Summary</h2>
 <p align="center">
-  <a href="#instalation-">CLI Commands</a> •
+  <a href="#bash-commands">CLI Commands</a> •
   <a href="#examples-">Linked Files</a>
 </p>
 
