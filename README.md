@@ -58,12 +58,17 @@ $ diff -s file_1.txt file_2.txt
 
 ### - Linked Files / Symbolic Links
 > Symbolic links - like shortcuts in **Windows**, and aliases in **MacOS** - provide mechanism for referring to another file. <br>
-> Symbolic links can be easily identified by using `ls -l`, and by using the `file` command.
+> Symbolic links can be easily identified by using `ls -l`, and by using the `file` command. <br>
 
-> Hard Links - are additional pointers to an inode(inode and directory structures work together to provide an underpinning framework that stores all the metadata for every file and directory. filesystem ext4, ntfs... etc), meaning they can exist only on the same volume as the target.
+> Hard Links - are additional pointers to an inode(inode and directory structures work together to provide an underpinning framework that stores all the metadata for every file and directory. filesystem ext4, ntfs... etc), meaning they can exist only on the same volume as the target. <br>
 > Executing `ls -i` will tell you what inode you have for a determined file.
 
 <img src="./assets/ls-i.png">
+
+> When we use `ln` without any flags, he creates a hard link, that points to inode of a file. Therefore, he gets access to the "real" location of the file. <br> 
+> If we deleted **teste2**, which was the first file created, he would still function as normal, since he's pointin to an inode and not the the file itself. <br>
+
+<img src="./assets/no-flag-ln.png">
 
 ```console
 $ ls -l /usr/bin/awk
