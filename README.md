@@ -1,6 +1,7 @@
 ## Bash Commands
 
-### - [Less](https://linux.die.net/man/1/less)
+<details>
+<summary>### - [Less](https://linux.die.net/man/1/less)</sumary>
 ```console
 $ less file_2.txt
 (Showing contents of file_2.txt)
@@ -22,6 +23,7 @@ $ less file_*.txt
   ":n" (Next)
 
 ```
+</details>
 
 ### - [Diff](https://linux.die.net/man/1/diff)
 ```console
