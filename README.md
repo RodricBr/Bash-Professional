@@ -59,6 +59,8 @@ $ diff -s file_1.txt file_2.txt
 ### - Linked Files / Symbolic Links
 > Symbolic links - like shortcuts in **Windows**, and aliases in **MacOS** - provide mechanism for referring to another file. <br>
 > Symbolic links can be easily identified by using `ls -l`, and by using the `file` command.
+
+> Hard Links - are additional pointers to an inode(inode and directory structures work together to provide an underpinning framework that stores all the metadata for every file and directory. filesystem ext4, ntfs... etc), meaning they can exist only on the same volume as the target.
 ```console
 $ ls -l /usr/bin/awk
 ("-l" directing ls to use long listing format)
