@@ -5,7 +5,7 @@
   <a href="#string-manipulation">String Manipulation</a>
 </p>
 
-
+---
 
 ## Bash Commands
 
