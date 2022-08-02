@@ -67,8 +67,10 @@ $ diff -s file_1.txt file_2.txt
 
 > When we use `ln` without any flags, he creates a hard link, that points to inode of a file. Therefore, he gets access to the "real" location of the file. <br> 
 > If we deleted **teste2**, which was the first file created, he would still function as normal, since he's pointin to an inode and not the the file itself. <br>
-
 <img src="./assets/no-flag-ln.png">
+
+> 
+<img src="./assets/symbolic-link.png">
 
 ```console
 $ ls -l /usr/bin/awk
