@@ -67,7 +67,7 @@ $ diff -s file_1.txt file_2.txt
 
 <br>
 
-## MISC
+## General
 
 ### - Linked Files / Symbolic Links && Hard Links
 > Symbolic links - like shortcuts in **Windows**, and aliases in **MacOS** - provide mechanism for referring to another file. <br>
