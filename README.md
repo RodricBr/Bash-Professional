@@ -1,7 +1,8 @@
 <h2 align="center">Summary</h2>
 <p align="center">
   <a href="#bash-commands">CLI Commands</a> •
-  <a href="#--linked-files--symbolic-links--hard-links">Linked Files</a>
+  <a href="#--linked-files--symbolic-links--hard-links">Linked Files</a> •
+  <a href="#string-manipulation">String Manipulation</a>
 </p>
 
 
