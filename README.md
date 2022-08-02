@@ -69,7 +69,12 @@ $ diff -s file_1.txt file_2.txt
 > If we deleted **teste2**, which was the first file created, he would still function as normal, since he's pointin to an inode and not the the file itself. <br>
 <img src="./assets/no-flag-ln.png">
 
-> 
+Nesse exemplo, seria usando o link simbólico. Veja que quando cria o link simbólico, ele não mostra os dados originais do arquivo, e ainda possuí um l antes das permissões, mostrando que é um link simbólico. O inode dos dois são diferentes, visto que fiz referência daquele arquivo, para o arquivo de destino, e não para o inode dele. Por fim, na última linha, mostra o que acontece quando o arquivo é deletado. Ele simplesmente vai "matar" o link. Se eu fizer um cat no link, ele vai dizer que o arquivo não foi encontrado/não existe, já que a referência do link, é para o arquivo, e não para o inode
+
+
+> In this example, it would be using the symbolic link. See that when you create the symbolic link, it doesn't show the original data of the file, and it still has an `l` before the permissions, showing that it's a symbolic link. <br>
+> The inode of the two are different, since I referred that file, to the destination file, and not to its inode. <br>
+> Finally, on the last line, it shows what happens when the file is deleted. It will simply "kill" the link. If I do a `cat`(command) on the link, it will say that the file was not found/does not exist, since the link reference is to the file, not to the inode.
 <img src="./assets/symbolic-link.png">
 
 ```console
