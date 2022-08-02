@@ -5,6 +5,8 @@
   <a href="#string-manipulation">String Manipulation</a>
 </p>
 
+<img src="./assets/i-l-bash.png">
+
 ---
 
 ## Bash Commands
