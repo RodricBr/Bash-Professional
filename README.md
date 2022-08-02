@@ -5,7 +5,9 @@
   <a href="#string-manipulation">String Manipulation</a>
 </p>
 
-<img src="./assets/i-l-bash.png" align="center">
+<p align="center">
+  <img src="./assets/i-l-bash.png">
+</p>
 
 ---
 
