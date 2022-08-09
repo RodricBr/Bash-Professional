@@ -75,7 +75,7 @@ $ diff -s file_1.txt file_2.txt
 
 > A `!` is not a control operator but a [Reserved Word](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_04). It becomes a logical NOT [negation operator] inside Arithmetic Expressions and inside test constructs (while still requiring an space delimiter). <br>
 
-#### A.1 : List terminator <br>
+#### 1.1 : List terminator <br>
 - `;` : Will run one command after another has finished, irrespective of the outcome of the first. (List terminator)
 <img src="./assets/c-operators-1.png">
 
@@ -87,7 +87,7 @@ $ diff -s file_1.txt file_2.txt
 
 > Here, `ping` is launched in the background and `echo` starts running in the foreground immediately, without waiting for `ping` to exit. <br>
 
-#### A.2 : Logical operators <br>
+#### 1.2 : Logical operators <br>
 - `&&` : Used to build **AND** lists, it allows you to run one command only if another exited successfully. <br>
 <img src="./assets/c-operators-3.png">
 
@@ -112,7 +112,7 @@ $ diff -s file_1.txt file_2.txt
 [ ! a = a ]
 ```
 
-#### A.3 Pipe operator
+#### 1.3 Pipe operator
 - `|` : The pipe operator, passes the output of one command as input to another. A command built from the pipe operator is called a pipeline. <br>
 <img src="./assets/c-operators-5.png">
 
@@ -124,11 +124,14 @@ $ diff -s file_1.txt file_2.txt
 command1 |& command2
 ```
 
-#### A.4 Other list punctuation
+#### 1.4 Other list punctuation
 - `;;` : Used solely to mark the end of a case statement. Ksh, bash and zsh also support ;& to fall through to the next case and ;;& (not in ATT ksh) to go on and test subsequent cases.
 
 - `(` and `)` are used to group commands and launch them in a subshell.
 - `{` and `}` also group commands, but does not launch them in a subshell.
+
+### - Redirection Operators
+> In the shell command language, a token that performs a redirection function. It is one of the following symbols: `<`, `>`, `>|`, `<<`, `>>`, `<&`, `>&`, `<<-`, `<>`.
 
 <br>
 
