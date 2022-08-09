@@ -96,12 +96,27 @@ $ diff -s file_1.txt file_2.txt
 
 > This command can also be written like so: `if command1; then command2; fi`. (if the return status is ignored)
 
-- `||` : Used to build **OR** lists, it allows you to run one command only if another exited unsuccessfully.
+- `||` : Used to build **OR** lists, it allows you to run one command only if another exited unsuccessfully. <br>
 <img src="./assets/c-operators-4.png">
 
 > Here, `echo` will only run if `listtt`(which is a unknown command) failed. (if it returns an exit status other than 0). <br>
 > Both commands are run in the foreground. <br>
 
+> This command can also be written like so: `if ! command1; then command2; fi`
+
+- `!` : This is a reserved word which acts as the "**not**" operator (but must have a delimiter), used to negate the return status of a command — return 0 if the command returns a nonzero status, return 1 if it returns the status 0. Also a logical NOT for the test utility. <br>
+
+```bash
+! command1
+
+[ ! a = a ]
+```
+
+#### A.3 Pipe operator
+- `|` : The pipe operator, passes the output of one command as input to another. A command built from the pipe operator is called a pipeline. <br>
+<img src="./assets/c-operators-5.png">
+
+> Any output printed by `ls` is passed as input to `wc` (which will count words).
 
 <br>
 
