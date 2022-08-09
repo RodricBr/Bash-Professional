@@ -118,6 +118,18 @@ $ diff -s file_1.txt file_2.txt
 
 > Any output printed by `ls` is passed as input to `wc` (which will count words).
 
+- `|&` : This is a shorthand for `2>&1` | in bash and zsh. It passes both standard output and standard error of one command as input to another.
+
+```bash
+command1 |& command2
+```
+
+#### A.4 Other list punctuation
+- `;;` : Used solely to mark the end of a case statement. Ksh, bash and zsh also support ;& to fall through to the next case and ;;& (not in ATT ksh) to go on and test subsequent cases.
+
+- `(` and `)` are used to group commands and launch them in a subshell.
+- `{` and `}` also group commands, but does not launch them in a subshell.
+
 <br>
 
 ---
