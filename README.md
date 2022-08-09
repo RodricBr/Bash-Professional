@@ -75,9 +75,15 @@ $ diff -s file_1.txt file_2.txt
 
 > A `!` is not a control operator but a [Reserved Word](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_04). It becomes a logical NOT [negation operator] inside Arithmetic Expressions and inside test constructs (while still requiring an space delimiter). <br>
 
-- 1.1
+- 1.1 (List terminator)
 `;` : Will run one command after another has finished, irrespective of the outcome of the first.
 <img src="./assets/c-operators-1.png">
+> In this example, I execute the `ping` command on a non-existent domain. <br>
+> Even though the first command token failed(ping), the second command token will still be executed. <br>
+
+- 1.2
+`&` : This will run a command in the background, allowing you to continue working in the same shell.
+<img src="./assets/c-operators-2.png">
 
 <br>
 
