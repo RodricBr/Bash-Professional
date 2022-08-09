@@ -78,12 +78,15 @@ $ diff -s file_1.txt file_2.txt
 - 1.1 (List terminator)
 `;` : Will run one command after another has finished, irrespective of the outcome of the first.
 <img src="./assets/c-operators-1.png">
-> In this example, I execute the `ping` command on a non-existent domain. <br>
+
+> Here, I execute the `ping` command on a non-existent domain. <br>
 > Even though the first command token failed(ping), the second command token will still be executed. <br>
 
 - 1.2
 `&` : This will run a command in the background, allowing you to continue working in the same shell.
 <img src="./assets/c-operators-2.png">
+
+> Here, ping is launched in the background and echo starts running in the foreground immediately, without waiting for command1 to exit. <br>
 
 <br>
 
