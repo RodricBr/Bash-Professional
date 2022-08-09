@@ -69,6 +69,18 @@ $ diff -s file_1.txt file_2.txt
 
 ## General
 
+### Control Operators
+> A token that performs a control function. <br>
+> It is a newline or one of the following: `||`, `&&`, `&`, `;`, `;;`, `;&`, `;;&`, `|`, `|&`, `(`, or `)`. <br>
+
+
+
+<br>
+
+---
+
+<br>
+
 ### - Linked Files / Symbolic Links && Hard Links
 > Symbolic links - like shortcuts in **Windows**, and aliases in **MacOS** - provide mechanism for referring to another file. <br>
 > Symbolic links can be easily identified by using `ls -l`, and by using the `file` command. <br>
