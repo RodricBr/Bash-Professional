@@ -85,10 +85,23 @@ $ diff -s file_1.txt file_2.txt
 - `&` : This will run a command in the background, allowing you to continue working in the same shell.
 <img src="./assets/c-operators-2.png">
 
-> Here, ping is launched in the background and echo starts running in the foreground immediately, without waiting for ping to exit. <br>
+> Here, `ping` is launched in the background and `echo` starts running in the foreground immediately, without waiting for `ping` to exit. <br>
 
 #### A.2 : Logical operators <br>
-- `&&` : Used to build AND lists, it allows you to run one command only if another exited successfully. <br>
+- `&&` : Used to build **AND** lists, it allows you to run one command only if another exited successfully. <br>
+<img src="./assets/c-operators-3.png">
+
+> Here, `echo` will run after `ping` has finished and only if `ping` was successful. (if its exit code was 0) <br>
+> Both commands are run in the foreground. <br>
+
+> This command can also be written like so: `if command1; then command2; fi`. (if the return status is ignored)
+
+- `||` : Used to build **OR** lists, it allows you to run one command only if another exited unsuccessfully.
+<img src="./assets/c-operators-4.png">
+
+> Here, `echo` will only run if `listtt`(which is a unknown command) failed. (if it returns an exit status other than 0). <br>
+> Both commands are run in the foreground. <br>
+
 
 <br>
 
