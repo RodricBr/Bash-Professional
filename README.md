@@ -93,6 +93,7 @@ $ diff -s file_1.txt file_2.txt
 
 > Here, `echo` will run after `ping` has finished and only if `ping` was successful. (if its exit code was 0) <br>
 > Both commands are run in the foreground. <br>
+> Exit Code: The value returned by a command to its caller. The value is restricted to eight bits, so the maximum value is 255.
 
 > This command can also be written like so: `if command1; then command2; fi`. (if the return status is ignored)
 
@@ -359,4 +360,6 @@ echo "The length of the input string is: $LEN_"
 <br>
 
 
-
+<!--
+https://www.gnu.org/software/bash/manual/html_node/Definitions.html
+-->
