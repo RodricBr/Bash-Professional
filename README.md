@@ -171,6 +171,7 @@ I love Rio_Novo Vila_Bela Benedito
 
 - In here, bash considers "I love" and "{Rio_Novo,Vila_Bela,Benedito}"
   to be separate tokens.
+  A Token is a sequence of characters considered a single unit by the shell. It is either a word or an operator.
 - As a result, the brace expansion is performed but "I love" is not
   considered a preamble to the brace expansion.
 - If we close "I love" in quotes, bash will sees as two(2) tokens.
