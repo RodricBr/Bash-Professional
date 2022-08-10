@@ -135,6 +135,10 @@ command1 |& command2
 ### - Redirection Operators
 > In the shell command language, a token that performs a redirection function. It is one of the following symbols: `<`, `>`, `>|`, `<<`, `>>`, `<&`, `>&`, `<<-`, `<>`.
 
+<!--
+https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
+-->
+
 <br>
 
 ---
