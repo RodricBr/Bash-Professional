@@ -64,7 +64,7 @@ $ diff -s file_1.txt file_2.txt
 
 ### -[Dpkg Reconfigure](https://manpages.ubuntu.com/manpages/bionic/man8/dpkg-reconfigure.8.html)
 > `dpkg-reconfigure` is a command line tool used to reconfigure an already installed package. <br>
-> In this example, I'll show how you can change your bash font using it.
+> In this example, I'll show how you can change your bash font using this command.
 ```console
 $ sudo apt install fontconfig
 - The command above, will install "fc", which allows us to check/list all of the fonts installed on our system,
@@ -78,7 +78,8 @@ $ sudo dpkg-reconfigure -plow console-setup # Selecionar a fonte Terminus
   "-plow" flag shows all questions, irrespective of whatever default might have been set elsewhere.
 - 1- Select the encoding type
   2- The character set to support (Latin1 is recommended)
-  3- And finally, the font name.
+  3- Select the font name. In this example, you'd have to select "Terminus" font.
+  4- And finally, the desired font size.
 
 $ cat /etc/default/console-setup
 - And to check if everything is as expected, we can cat console-setup
