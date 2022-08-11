@@ -62,7 +62,7 @@ $ diff -s file_1.txt file_2.txt
 > Added another line
 ```
 
-### -[Dpkg Reconfigure](https://manpages.ubuntu.com/manpages/bionic/man8/dpkg-reconfigure.8.html)
+### - [Dpkg-reconfigure](https://manpages.ubuntu.com/manpages/bionic/man8/dpkg-reconfigure.8.html)
 > `dpkg-reconfigure` is a command line tool used to reconfigure an already installed package. <br>
 > In this example, I'll show how you can change your bash font using this command.
 ```console
