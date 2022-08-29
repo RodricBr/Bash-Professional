@@ -4,7 +4,7 @@
   <a href="#--control-operators">Control Operators</a> •
   <a href="#--linked-files--symbolic-links--hard-links">Linked Files</a> •
   <a href="#string-manipulation">String Manipulation</a> •
-  <a href="#13-pipe-operator">File manipulation</a>
+  <a href="#13-pipe-operator">File Manipulation</a>
 </p>
 
 <p align="center">
