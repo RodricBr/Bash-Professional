@@ -169,14 +169,27 @@ command < file.txt
 
 > Execute command on the contents of file.txt
 
-- <> : Same as above, but the file is open in **read+write** mode instead of **read-only**.
+- `<>` : Same as above, but the file is open in **read+write** mode instead of **read-only**.
 
 ```bash
 command <> file.txt
 ```
 
-> If the `file.txt` doesn't exist, it will be created.
-- 
+> If the `file.txt` doesn't exist, it will be created. That operator is rarely used because commands generally only read from their stdin.
+
+- `>` : Directs the output of a command into a file.
+```bash
+command > out.txt
+```
+
+> Save the output of command as `out.txt`. If the file exists, its contents will be overwritten and if it doesn't exists, it will be created.
+> This operator is also often used to choose whether something should be printed to standard error or standard output. Like so:
+```bash
+command >out.txt 2>error.txt
+```
+
+> `>` will redirect standard output and `2>` redirects standard error.
+> Output can also be redirected using `1>` but, since this is the default, the "1" is usually omitted and it's written simply as `>`
 
 <!--
 https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
