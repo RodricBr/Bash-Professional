@@ -157,7 +157,7 @@ command1 |& command2
 - `(` and `)` are used to group commands and launch them in a subshell.
 - `{` and `}` also group commands, but does not launch them in a subshell.
 
-### - Redirection Operators
+### - Redirection Operators (No images, since output is not shown)
 > In the shell command language, a token that performs a redirection function, is one of the following symbols: `<`, `>`, `>|`, `<<`, `>>`, `<&`, `>&`, `<<-`, `<>`.
 > These allow you to control the input and output of your commands. They can appear anywhere within a simple command or may follow a command. <br>
 > Redirections are processed in the order they appear, from left to right. <br>
