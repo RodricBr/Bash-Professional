@@ -209,6 +209,10 @@ command >| out.txt
 command >> out.txt
 ```
 
+- `>&` : (per POSIX spec) when surrounded by **digits** (`1>&2`) or `-` on the right side (`1>&-`) either redirects only one file descriptor or closes it (`>&-`).
+
+> A `>&` followed by a file descriptor number is a portable way to redirect a file descriptor, and `>&-` is a portable way to close a file descriptor.
+
 <!--
 https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
 -->
