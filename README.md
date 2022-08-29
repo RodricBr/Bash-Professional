@@ -157,7 +157,7 @@ command1 |& command2
 - `(` and `)` are used to group commands and launch them in a subshell.
 - `{` and `}` also group commands, but does not launch them in a subshell.
 
-### - Redirection Operators (No images, since output is not shown)
+### - Redirection Operators (No images, since output is not shown/visible)
 > In the shell command language, a token that performs a redirection function, is one of the following symbols: `<`, `>`, `>|`, `<<`, `>>`, `<&`, `>&`, `<<-`, `<>`.
 > These allow you to control the input and output of your commands. They can appear anywhere within a simple command or may follow a command. <br>
 > Redirections are processed in the order they appear, from left to right. <br>
@@ -202,6 +202,11 @@ command >| out.txt
 ```
 
 > If `out.txt` exists, the output of `command` will replace its content. If it does not exist it will be created.
+
+- `>>` : Does the same as `>`, except that if the target file exists, the new data are **appended**.
+```bash
+command >> out.txt
+```
 
 <!--
 https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
