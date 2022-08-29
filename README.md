@@ -196,6 +196,13 @@ command >out.txt 2>error.txt
 command < file.txt > out.txt 2> error.txt
 ```
 
+- `>|` : Does the same as `>`, but will overwrite the target, even if the shell has been configured to refuse overwriting. (with `set -C` OR `set -o noclobber`)
+```bash
+command >| out.txt
+```
+
+> If `out.txt` exists, the output of `command` will replace its content. If it does not exist it will be created.
+
 <!--
 https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
 -->
