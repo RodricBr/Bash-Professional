@@ -191,6 +191,11 @@ command >out.txt 2>error.txt
 > `>` will redirect standard output and `2>` redirects standard error.
 > Output can also be redirected using `1>` but, since this is the default, the "1" is usually omitted and it's written simply as `>`
 
+> Concluding: to run `command` on `file.txt` and save its output in `out.txt` and any error messages in `error.txt` you would run:
+```bash
+command < file.txt > out.txt 2> error.txt
+```
+
 <!--
 https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
 -->
