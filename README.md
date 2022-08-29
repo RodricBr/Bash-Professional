@@ -3,7 +3,8 @@
   <a href="#bash-commands">CLI Commands</a> •
   <a href="#--control-operators">Control Operators</a> •
   <a href="#--linked-files--symbolic-links--hard-links">Linked Files</a> •
-  <a href="#string-manipulation">String Manipulation</a>
+  <a href="#string-manipulation">String Manipulation</a> •
+  <a href="#13-pipe-operator">File manipulation</a>
 </p>
 
 <p align="center">
