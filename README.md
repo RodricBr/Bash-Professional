@@ -1,6 +1,7 @@
 <h2 align="center">Summary</h2>
 
 - [Bash Commands](#bash-commands)
+	- [awk](#--awk)
 	- [less](#--less)
 	- [diff](#--diff)
 	- [dpkg-reconfigure](#--dpkg-reconfigure)
@@ -33,7 +34,13 @@
 
 ## Bash Commands
 
+### - [Awk](https://linux.die.net/man/1/awk)
+```console
+
+```
+
 ### - [Less](https://linux.die.net/man/1/less)
+> `Less` allows you to view (**but not change**) the contents of a text file one screen at a time.
 ```console
 $ less file_2.txt
 (Showing contents of file_2.txt)
@@ -57,6 +64,7 @@ $ less file_*.txt
 ```
 
 ### - [Diff](https://linux.die.net/man/1/diff)
+> `Diff` allows you to compare two files line by line.
 ```console
 $ diff -s file_1.txt file_2.txt
 (Checking the difference of two given files)
