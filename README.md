@@ -1,4 +1,19 @@
 <h2 align="center">Summary</h2>
+
+- [Bash Commands](#bash-commands)
+	- [less](#--less)
+	- [diff](#--diff)
+	- [dpkg-reconfigure](#--dpkg-reconfigure)
+- [General](#general)
+	- [Control Operators](#--control-operators)
+	- [Redirection Operators](#--redirection-operators-no-images-since-output-is-not-shownvisible)
+	- [Linked Files: Symbolic Links / Hard Links](#--linked-files--symbolic-links--hard-links)
+	- [String Manipulation](#string-manipulation)
+		- [Brace Expansion](#--brace-expansion--)
+	  - [Command Substitution & Parameter Expansion](#--command-substitution---parameter-expansion-)
+
+<!--
+
 <p align="center">
   <a href="#bash-commands">CLI Commands</a> •
   <a href="#--control-operators">Control Operators</a> •
@@ -6,6 +21,8 @@
   <a href="#string-manipulation">String Manipulation</a> •
   <a href="#--redirection-operators-no-images-since-output-is-not-shownvisible">File Manipulation</a>
 </p>
+
+-->
 
 <p align="center">
   <img src="./assets/i-l-bash.png">
