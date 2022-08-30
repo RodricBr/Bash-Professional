@@ -4,13 +4,13 @@
 	- [less](#--less)
 	- [diff](#--diff)
 	- [dpkg-reconfigure](#--dpkg-reconfigure)
-- [General](#general)
+- [General](#general-back-to-top)
 	- [Control Operators](#--control-operators)
 	- [Redirection Operators](#--redirection-operators-no-images-since-output-is-not-shownvisible)
-	- [Linked Files: Symbolic Links / Hard Links](#--linked-files--symbolic-links--hard-links)
-	- [String Manipulation](#string-manipulation)
+	- [Linked Files: Symbolic Links / Hard Links](#--linked-files--symbolic-links--hard-links-back-to-top)
+	- [String Manipulation](#string-manipulation-back-to-top)
 		- [Brace Expansion](#--brace-expansion--)
-	  - [Command Substitution & Parameter Expansion](#--command-substitution---parameter-expansion-)
+		- [Command Substitution & Parameter Expansion](#--command-substitution---parameter-expansion-)
 
 <!--
 
