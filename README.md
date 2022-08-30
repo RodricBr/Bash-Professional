@@ -35,7 +35,7 @@
 ## Bash Commands
 
 ### - [Awk](https://linux.die.net/man/1/awk)
-> `awk` is a pattern scanning and processing language. Awk is used as a command as often as it is used as
+> `awk` is a pattern scanning and processing language. Awk is used as a command as often as it is used as <br>
 > an interpreted script, and can be useful to write tiny but effective programs in the bash command line.
 ```console
 $ awk
