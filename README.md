@@ -35,12 +35,14 @@
 ## Bash Commands
 
 ### - [Awk](https://linux.die.net/man/1/awk)
+> `awk` is a pattern scanning and processing language. Awk is used as a command as often as it is used as
+> an interpreted script, and can be useful to write tiny but effective programs in the bash command line.
 ```console
-
+$ awk
 ```
 
 ### - [Less](https://linux.die.net/man/1/less)
-> `Less` allows you to view (**but not change**) the contents of a text file one screen at a time.
+> `less` allows you to view (**but not change**) the contents of a text file one screen at a time.
 ```console
 $ less file_2.txt
 (Showing contents of file_2.txt)
@@ -64,7 +66,7 @@ $ less file_*.txt
 ```
 
 ### - [Diff](https://linux.die.net/man/1/diff)
-> `Diff` allows you to compare two files line by line.
+> `diff` allows you to compare two files line by line.
 ```console
 $ diff -s file_1.txt file_2.txt
 (Checking the difference of two given files)
@@ -88,6 +90,9 @@ $ diff -s file_1.txt file_2.txt
 > Changed-you
 > Added another line
 ```
+
+### - [Dpkg](https://linux.die.net/man/1/dpkg)
+> `dpkg` is a package manager for Debian, or Debian based distributions.
 
 ### - [Dpkg-reconfigure](https://manpages.ubuntu.com/manpages/bionic/man8/dpkg-reconfigure.8.html)
 > `dpkg-reconfigure` is a command line tool used to reconfigure an already installed package. <br>
