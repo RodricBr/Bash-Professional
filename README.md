@@ -2,9 +2,9 @@
 
 - [Bash Commands](#bash-commands)
 	- [awk](#--awk)
-	- [less](#--less)
 	- [diff](#--diff)
 	- [dpkg-reconfigure](#--dpkg-reconfigure)
+	- [less](#--less)
 - [General](#general-back-to-top)
 	- [Control Operators](#--control-operators)
 	- [Redirection Operators](#--redirection-operators-no-images-since-output-is-not-shownvisible)
@@ -37,33 +37,8 @@
 ### - [Awk](https://linux.die.net/man/1/awk)
 > `awk` is a pattern scanning and processing language. Awk is used as a command as often as it is used as <br>
 > an interpreted script, and can be useful to write tiny but effective programs in the bash command line.
-```console
-$ awk
-```
 
-### - [Less](https://linux.die.net/man/1/less)
-> `less` allows you to view (**but not change**) the contents of a text file one screen at a time.
-```console
-$ less file_2.txt
-(Showing contents of file_2.txt)
-
-- Press "q" to exit less
-- Use "g" to get to the first line of the file
-- Use "SHIFT G" to get to the last line of the file
-
-------------------------------------------------------------------------------
-$ less -N file_1.txt
-(Showing contents of file_1.txt with line count
-on the left side of the screen)
-
--------------------------------------------------------------------------------
-$ less file_*.txt
-
-- Less can open multiple files at once, and you can
-  navigate through them using: ":p" (Previous) and
-  ":n" (Next)
-
-```
+<img src="./assets/awk-example.png">
 
 ### - [Diff](https://linux.die.net/man/1/diff)
 > `diff` allows you to compare two files line by line.
@@ -118,6 +93,29 @@ $ cat /etc/default/console-setup
   and look for "FONTFACE", with the name of our font inside quotes.
 ```
 
+### - [Less](https://linux.die.net/man/1/less)
+> `less` allows you to view (**but not change**) the contents of a text file one screen at a time.
+```console
+$ less file_2.txt
+(Showing contents of file_2.txt)
+
+- Press "q" to exit less
+- Use "g" to get to the first line of the file
+- Use "SHIFT G" to get to the last line of the file
+
+------------------------------------------------------------------------------
+$ less -N file_1.txt
+(Showing contents of file_1.txt with line count
+on the left side of the screen)
+
+-------------------------------------------------------------------------------
+$ less file_*.txt
+
+- Less can open multiple files at once, and you can
+  navigate through them using: ":p" (Previous) and
+  ":n" (Next)
+
+```
 
 <br>
 
