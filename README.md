@@ -47,6 +47,7 @@ a simple introduction, so that you won't be lost throughout the elapse of this r
 Bash is just an application, and its primary job is to run other applications (in the form of commands) that are installed <br>
 on the same system. It reads commands from the user input or from a file of commands and executes them, usually by turning <br>
 them into one or more system calls. It is usually not part of the kernel since the command interpreter is subject to changes. <br>
+If you're really interested, I really recommend reading this whole article: [link](https://questionanswer.io/why-is-command-interpreter-separate-from-kernel/)
 
 Bash is the GNU Project's shell-the Bourne Again SHell (BASH). This is an sh-compatible shell that incorporates useful <br>
 features from the Korn shell (ksh) and the C shell (csh). It is intended to conform to the **IEEE POSIX P1003.2/ISO 9945.2 Shell** <br>
