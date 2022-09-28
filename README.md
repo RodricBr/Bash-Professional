@@ -488,7 +488,7 @@ echo "The length of the input string is: $LEN_"
 <br>
 
 # License
-> This repository is under the MIT License. See `LICENSE` file for more information.
+> This repository is under the Apache v2.0 License. See `LICENSE` file for more information.
 
 <!--
 https://www.gnu.org/software/bash/manual/html_node/Definitions.html
