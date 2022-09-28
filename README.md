@@ -131,7 +131,7 @@ $ less file_*.txt
 
 ## General [(Back to Top)](#)
 
-### - Piping and Command Redirection
+### - Command Redirection
 > Redirection is a feature in Linux such that when executing a command, you can change the [standard input/output](https://www.gnu.org/software/gnuastro/manual/html_node/Input-output-options.html) devices.
 
 > Where:
@@ -209,6 +209,13 @@ command1 |& command2
 > In the shell command language, a token that performs a redirection function, is one of the following symbols: `<`, `>`, `>|`, `<<`, `>>`, `<&`, `>&`, `<<-`, `<>`.
 > These allow you to control the input and output of your commands. They can appear anywhere within a simple command or may follow a command. <br>
 > Redirections are processed in the order they appear, from left to right. <br>
+
+> Redirection is a feature in Linux such that when executing a command, you can change the [standard input/output](https://www.gnu.org/software/gnuastro/manual/html_node/Input-output-options.html) devices.
+
+> Where:
+- stdin (0) - Exit Code refers to the **Standard Input** (data inserted to the program)
+- stdout (1) - Exit Code refers to the **Standard Output** (data printed/outputed by the program)
+- stderr (2) - Exit Code refers to the **Standard Error** (**from 2 - 255**, stands for messages of error)
 
 - `<` : Gives input to a command.
 ```bash
