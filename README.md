@@ -36,6 +36,20 @@
 ---
 
 ## Introduction
+> First of all, what is the meaning of this repository?
+In this repository, I'll create a way to simply the learning path to become a Bash Professional, everything I learn, <br>
+I see that I think is going to be usefull I add to this repository. If you're not into GNU/Linux Bash, I'll give you <br>
+a simple introduction, so that you won't be lost throughout the elapse of this repository.
+
+> What is **Bash**?
+Bash is just an application, and its primary job is to run other applications (in the form of commands) that are installed <br>
+on the same system. It reads commands from the user input or from a file of commands and executes them, usually by turning <br>
+them into one or more system calls. It is usually not part of the kernel since the command interpreter is subject to changes. <br>
+
+Bash is the GNU Project's shell-the Bourne Again SHell (BASH). This is an sh-compatible shell that incorporates useful <br>
+features from the Korn shell (ksh) and the C shell (csh). It is intended to conform to the **IEEE POSIX P1003.2/ISO 9945.2 Shell** <br>
+and Tools standard. It offers functional improvements over sh for both programming and interactive use. In addition, <br>
+most sh scripts can be run by Bash without modification.
 
 ## Bash Commands
 
