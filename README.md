@@ -151,7 +151,7 @@ $ less file_*.txt
 
 <br>
 
-## General [(Back to Top)](#)
+## General [(Back to Top)](#summary)
 
 ### - Control Operators
 > A token that performs a control function. <br>
@@ -291,7 +291,7 @@ https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-
 
 <br>
 
-### - Linked Files / Symbolic Links && Hard Links [(Back to Top)](#)
+### - Linked Files / Symbolic Links && Hard Links [(Back to Top)](#summary)
 > Symbolic links - like shortcuts in **Windows**, and aliases in **MacOS** - provide mechanism for referring to another file. <br>
 > Symbolic links can be easily identified by using `ls -l`, and by using the `file` command. <br>
 
@@ -349,7 +349,7 @@ $ readlink -m /usr/bin/awk
 
 <br>
 
-## String Manipulation [(Back to Top)](#)
+## String Manipulation [(Back to Top)](#summary)
 
 ### - Brace Expansion `{ }`
 - **Ex**: preamble{expansion}postscript
@@ -445,7 +445,7 @@ $ mkdir {2008..2017}-{01..12}
   all of the months over a range of 10 years!
 ```
 
-### - Command Substitution `$()` & Parameter Expansion `${}` [(Back to Top)](#)
+### - Command Substitution `$()` & Parameter Expansion `${}` [(Back to Top)](#summary)
 > Command substitution allows us to use the output of a command as an argument of another command
 
 > The `$` sign is a symbol with special significance to bash. <br>
