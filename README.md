@@ -36,12 +36,12 @@
 ---
 
 ## Introduction
-> First of all, what is the meaning of this repository?
+> First of all, what is the meaning of this repository? <br>
 In this repository, I'll create a way to simply the learning path to become a Bash Professional, everything I learn, <br>
 I see that I think is going to be usefull I add to this repository. If you're not into GNU/Linux Bash, I'll give you <br>
 a simple introduction, so that you won't be lost throughout the elapse of this repository.
 
-> What is **Bash**?
+> What is **Bash**? <br>
 Bash is just an application, and its primary job is to run other applications (in the form of commands) that are installed <br>
 on the same system. It reads commands from the user input or from a file of commands and executes them, usually by turning <br>
 them into one or more system calls. It is usually not part of the kernel since the command interpreter is subject to changes. <br>
