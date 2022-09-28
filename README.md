@@ -118,7 +118,7 @@ $ less file_*.txt
 
 ```
 
-### [Ls](https://linux.die.net/man/1/ls)
+### - [Ls](https://linux.die.net/man/1/ls)
 > `ls` is used to list file or directory contents.
 
 <img src="./assets/ls.png">
