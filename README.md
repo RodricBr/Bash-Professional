@@ -203,7 +203,9 @@ command1 |& command2
 Where:
 - stdin (0) - Exit Code refers to the **Standard Input** (data inserted to the program)
 - stdout (1) - Exit Code refers to the **Standard Output** (data printed/outputed by the program)
-- stderr (2) - Exit Code refers to the **Standard Error** (**from 2 - 255**, stands for messages of error) <br>
+- stderr (2) - Exit Code refers to the **Standard Error** (**from 2 - 255**, stands for messages of error)
+
+<br>
 
 - `<` : Gives input to a command.
 ```bash
