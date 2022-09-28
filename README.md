@@ -131,6 +131,18 @@ $ less file_*.txt
 
 ## General [(Back to Top)](#)
 
+### - Piping and Command Redirection
+> Redirection is a feature in Linux such that when executing a command, you can change the [standard input/output](https://www.gnu.org/software/gnuastro/manual/html_node/Input-output-options.html) devices.
+
+> Where:
+- stdin (0) - Refers to the **Standard Input** (data inserted to the program)
+- stdout (1) - Refers to the **Standard Output** (data printed/outputed by the program)
+- stderr (2) - Refers to the **Standard Error** (from 2 - 254, stand for messages of error)
+
+```console
+$ a
+```
+
 ### - Control Operators
 > A token that performs a control function. <br>
 > It is a "newline" or one of the following: `||`, `&&`, `&`, `;`, `;;`, `;&`, `;;&`, `|`, `|&`, `(`, or `)`. (POSIX Definition) <br>
