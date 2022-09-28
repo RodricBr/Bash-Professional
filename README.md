@@ -201,6 +201,8 @@ command1 |& command2
 
 > Redirection is a feature in Linux such that when executing a command, you can change the [standard input/output](https://www.gnu.org/software/gnuastro/manual/html_node/Input-output-options.html) devices.
 
+<img src="./assets/exit-codes.png">
+
 Where:
 - stdin (0) - Exit Code refers to the **Standard Input** (data inserted to the program)
 - stdout (1) - Exit Code refers to the **Standard Output** (data printed/outputed by the program)
