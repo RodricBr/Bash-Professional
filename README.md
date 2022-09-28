@@ -3,8 +3,9 @@
 - [Bash Commands](#bash-commands)
 	- [awk](#--awk)
 	- [diff](#--diff)
-	- [dpkg-reconfigure](#--dpkg-reconfigure)
+	- [dpkg](#--dpkg)
 	- [less](#--less)
+	- [ls](#--ls)
 - [General](#general-back-to-top)
 	- [Control Operators](#--control-operators)
 	- [Redirection Operators](#--redirection-operators-no-images-since-output-is-not-shownvisible)
@@ -116,6 +117,11 @@ $ less file_*.txt
   ":n" (Next)
 
 ```
+
+### [Ls](https://linux.die.net/man/1/ls)
+> `ls` is used to list file or directory contents.
+
+<img src="./assets/ls.png">
 
 <br>
 
