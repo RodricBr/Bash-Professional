@@ -428,11 +428,18 @@ aA1b aA2b aB3b aB4b
 
 - In the expansion, the preamble (lowercase a), and the
   postscirpt (lowercase b), are constant.
-- In the variable part of the expression,
+- In the variable part of the expresion,
   the brace expression is a list of items separated by comma
   "A{1,2}" AND "B{3,4}".
-- Bash starts with the first item ("A{1,2}"), and this is a brace expanssion as well,
+- Bash starts with the first item ("A{1,2}"), and this is a brace expansion as well,
   which expands to two(2) strings. Uppercase A1 and uppercase A2.
+  
+-------------------------------------------------------------------------------
+$ echo {1..5}{0,5}%
+10% 15% 20% 25% 30% 35% 40% 45% 50% 55%
+
+- List of percentages that are going up by 5, we use one brace expansion
+  as a prefix to another.
 ```
 
 <br>
@@ -445,7 +452,7 @@ $ mkdir {2008..2017}-{01..12}
   all of the months over a range of 10 years!
 ```
 
-> Cool Brace Expansion example:
+- Cool Brace Expansion example:
 ```console
 $ man man
 - Checking the manual for manual
