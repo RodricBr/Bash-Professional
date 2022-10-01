@@ -439,7 +439,7 @@ $ echo {1..5}{0,5}%
 10% 15% 20% 25% 30% 35% 40% 45% 50% 55%
 
 - List of percentages that are going up by 5, we use one brace expansion
-  as a prefix to another.
+  as a prefix to another. And we also have "%" sign as a suffix.
 ```
 
 <br>
