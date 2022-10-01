@@ -445,6 +445,16 @@ $ mkdir {2008..2017}-{01..12}
   all of the months over a range of 10 years!
 ```
 
+> Cool Brace Expansion example:
+```console
+$ man man
+- Checking the manual for manual
+
+$ man{,}
+- Checking the manual for manual, if you have an empty element in your Brace Expansion,
+  it doesn't add anything, but it adds a new word anyway.
+```
+
 ### - Command Substitution `$()` & Parameter Expansion `${}` [(Back to Top)](#summary)
 > Command substitution allows us to use the output of a command as an argument of another command
 
