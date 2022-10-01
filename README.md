@@ -440,6 +440,13 @@ $ echo {1..5}{0,5}%
 
 - List of percentages that are going up by 5, we use one brace expansion
   as a prefix to another. And we also have "%" sign as a suffix.
+OR (in bash 4 >)
+
+$ echo {10..55..5}%
+10% 15% 20% 25% 30% 35% 40% 45% 50% 55%
+
+- From 10 to 55, skipping 5. More simple!
+
 ```
 
 <br>
