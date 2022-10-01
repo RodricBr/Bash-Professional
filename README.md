@@ -538,5 +538,8 @@ echo "The length of the input string is: $LEN_"
 > This repository is under the MIT License. See [LICENSE](https://github.com/RodricBr/Bash-Professional/blob/main/LICENSE) file for more information.
 
 <!--
-https://www.gnu.org/software/bash/manual/html_node/Definitions.html
+# Ideas:
+1- https://www.gnu.org/software/bash/manual/html_node/Definitions.html
+
+2- https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html
 -->
