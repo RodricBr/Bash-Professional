@@ -54,6 +54,12 @@ features from the Korn shell (ksh) and the C shell (csh). It is intended to conf
 and Tools standard. It offers functional improvements over sh for both programming and interactive use. In addition, <br>
 most sh scripts can be run by Bash without modification.
 
+> How to execute a Bash **program**? <br>
+To get started, you'll need to create a file using `touch`, `vim file.txt`... etc, using the `.bash` OR the `.sh` file extension. <br>
+Although in Linux you don't need to specify the file extension, since Linux automatically identifies if the file is a text file, <br>
+or a bash/shell script file.
+Inside of the file you just created
+
 ## Bash Commands
 
 ### - [Awk](https://linux.die.net/man/1/awk)
