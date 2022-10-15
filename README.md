@@ -77,7 +77,7 @@ method, that can be faster and easier, which I will explain below.
 and the following parameter is the command that will be executed by the env in this environment. <br>
 Since env uses the system path, bash will run without you having to define its exact path, making it faster than the default <br>
 
-> **Importante OBS**: From distro to distro, the location of **bash** or **python**, for example, can be different.
+> **Important OBS**: From distro to distro, the location of **bash** or **python**, for example, can be different.
 
 ## Bash Commands
 
