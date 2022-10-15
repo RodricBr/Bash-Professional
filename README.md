@@ -41,6 +41,7 @@
 In this repository, I'll create a way to simply the learning path to become a Bash Professional, everything I learn, <br>
 I see that I think is going to be usefull I add to this repository. If you're not into GNU/Linux Bash, I'll give you <br>
 a simple introduction, so that you won't be lost throughout the elapse of this repository.
+<br>
 
 - What is **Bash**? <br>
 
@@ -53,6 +54,7 @@ Bash is the GNU Project's shell-the Bourne Again SHell (BASH). This is an sh-com
 features from the Korn shell (ksh) and the C shell (csh). It is intended to conform to the **IEEE POSIX P1003.2/ISO 9945.2 Shell** <br>
 and Tools standard. It offers functional improvements over sh for both programming and interactive use. In addition, <br>
 most sh scripts can be run by Bash without modification.
+<br>
 
 - How to execute a Bash **program**? <br>
 
