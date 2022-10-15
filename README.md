@@ -55,6 +55,7 @@ and Tools standard. It offers functional improvements over sh for both programmi
 most sh scripts can be run by Bash without modification.
 
 > How to execute a Bash **program**? <br>
+
 To get started, you'll need to create a file using `touch`, `vim file.txt`... etc, using the `.bash` OR the `.sh` file extension. <br>
 Although in Linux you don't need to specify the file extension, since Linux automatically identifies if the file is a simple text file, <br>
 or if it is a bash/shell script file, we add the `.bash` OR `.sh` extension to the file, to make it more organized and if you're not using <br>
