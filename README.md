@@ -64,11 +64,11 @@ To get started, you'll need to create a file using `touch`, `vim file.txt`... et
 Although in Linux you don't need to specify the file extension, since Linux automatically identifies if the file is a simple text file, <br>
 or if it is a bash/shell script file, we add the `.bash` OR `.sh` extension to the file, to make it more organized and if you're not using <br>
 Linux.
+
 Inside of the file you just created, the first thing we add is a **shebang** or a **hashbang**. It takes the form of a comment <br>
 (lines starting with `#` are normally ignored by the shell), but the `!` right after the `#` indicates that it has to execute what is <br>
-indicated that will process that script, in our case, we put a shebang calling the bash binary (`/bin/bash`).
-
-But, from distro to distro, the location of **bash** or **python**, for example, can be different.
+indicated that will process that script, in our case, we put a shebang calling the bash binary (`/bin/bash`), or maybe using a different <br>
+method, that can be faster and easier, which I will explain below.
 
 ```console
 #!/usr/bin/env bash
@@ -76,6 +76,8 @@ But, from distro to distro, the location of **bash** or **python**, for example,
 > The above example is running the **env** command with the **bash** parameter. The **env** serves to create a new environment, <br>
 and the following parameter is the command that will be executed by the env in this environment. <br>
 Since env uses the system path, bash will run without you having to define its exact path, making it faster than the default <br>
+
+> **Importante OBS**: From distro to distro, the location of **bash** or **python**, for example, can be different.
 
 ## Bash Commands
 
