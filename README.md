@@ -36,13 +36,13 @@
 ---
 
 ## Introduction
-> First of all, what is the meaning of this repository? <br>
+- First of all, what is the meaning of this repository? <br>
 
 In this repository, I'll create a way to simply the learning path to become a Bash Professional, everything I learn, <br>
 I see that I think is going to be usefull I add to this repository. If you're not into GNU/Linux Bash, I'll give you <br>
 a simple introduction, so that you won't be lost throughout the elapse of this repository.
 
-> What is **Bash**? <br>
+- What is **Bash**? <br>
 
 Bash is just an application, and its primary job is to run other applications (in the form of commands) that are installed <br>
 on the same system. It reads commands from the user input or from a file of commands and executes them, usually by turning <br>
@@ -54,7 +54,7 @@ features from the Korn shell (ksh) and the C shell (csh). It is intended to conf
 and Tools standard. It offers functional improvements over sh for both programming and interactive use. In addition, <br>
 most sh scripts can be run by Bash without modification.
 
-> How to execute a Bash **program**? <br>
+- How to execute a Bash **program**? <br>
 
 To get started, you'll need to create a file using `touch`, `vim file.txt`... etc, using the `.bash` OR the `.sh` file extension. <br>
 Although in Linux you don't need to specify the file extension, since Linux automatically identifies if the file is a simple text file, <br>
@@ -69,9 +69,9 @@ But, from distro to distro, the location of **bash** or **python**, for example,
 ```console
 #!/usr/bin/env bash
 ```
-- The above example is running the **env** command with the **bash** parameter. The **env** serves to create a new environment, <br>
-and the following parameter is the command that will be executed by the env in this environment.
-Since env uses the system path, bash will run without you having to define its exact path, making it faster than the default
+> The above example is running the **env** command with the **bash** parameter. The **env** serves to create a new environment, <br>
+and the following parameter is the command that will be executed by the env in this environment. <br>
+Since env uses the system path, bash will run without you having to define its exact path, making it faster than the default <br>
 
 ## Bash Commands
 
