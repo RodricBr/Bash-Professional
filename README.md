@@ -320,7 +320,7 @@ https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-
 > Symbolic links - like shortcuts in **Windows**, and aliases in **MacOS** - provide mechanism for referring to another file. <br>
 > Symbolic links can be easily identified by using `ls -l`, and by using the `file` command. <br>
 
-> Hard Links - are additional pointers to an inode(inode and directory structures work together to provide an underpinning framework that stores all the metadata for every file and directory. filesystem ext4, ntfs... etc), meaning they can exist only on the same volume as the target. <br>
+> Hard Links - are additional pointers to an inode(inode is an identification in the disk for the linked file. inode and directory structures work together to provide an underpinning framework that stores all the metadata for every file and directory. filesystem ext4, ntfs... etc), meaning they can exist only on the same volume as the target. <br>
 > Executing `ls -i` will tell you what inode you have for a determined file.
 
 <img src="./assets/ls-i.png">
