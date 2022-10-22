@@ -320,6 +320,8 @@ https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-
 > Symbolic links - like shortcuts in **Windows**, and aliases in **MacOS** - provide mechanism for referring to another file. <br>
 > Symbolic links can be easily identified by using `ls -l`, and by using the `file` command. <br>
 
+<br>
+
 - Before we go any futher, we first need to understand what an `inode` is. [Full Explanation](https://www.slashroot.in/inode-and-its-structure-linux) <br>
 
 > In general, an **inode**(index node) is an identification in the disk for every file and directory in the filesystem. <br>
