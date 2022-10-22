@@ -320,7 +320,35 @@ https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-
 > Symbolic links - like shortcuts in **Windows**, and aliases in **MacOS** - provide mechanism for referring to another file. <br>
 > Symbolic links can be easily identified by using `ls -l`, and by using the `file` command. <br>
 
-> Hard Links - are additional pointers to an inode(inode is an identification in the disk for the linked file. inode and directory structures work together to provide an underpinning framework that stores all the metadata for every file and directory. filesystem ext4, ntfs... etc), meaning they can exist only on the same volume as the target. <br>
+- Before we go any futher, we first need to understand what an `inode` is. <br>
+
+> In general, an **inode**(index node) is an identification in the disk for every file and directory in the filesystem. <br>
+> Whenever a user or a program needs access to a file, the operating system first searches for the exact and unique inode (inode number), <br>
+> in a table called as an inode table. <br>
+> Inodes do not store actual data. Instead, they store the metadata where you can find the storage blocks of each file’s data <br>
+> and the metadata that contains in an inode are: <br>
+
+- Mode:
+This keeps information about two things, one is the permission information, the other is the type of inode, for example an inode can be of a file, directory or a block device etc.
+
+- Owner Info:
+Access details like owner of the file, group of the file etc.
+
+- Size:
+This location store the size of the file in terms of bytes.
+
+- Time Stamps:
+it stores the inode creation time, modification time, etc.
+
+> Now comes the important thing to understand about how a file is saved in a partition with the help of an inode.
+
+- Block Size:
+Whenever a partition is formatted with a file system.It normally gets formatted with a default block size. Now block size is the size of chunks in which data
+will be spread. So if the block size is 4K, then for a file of 15K it will take 4 blocks(because 4K*4 16), and technically speaking you waste 1 K.
+
+<br>
+
+> Hard Links - are additional pointers to an inode(inode and directory structures work together to provide an underpinning framework that stores all the metadata for every file and directory. filesystem ext4, ntfs... etc), meaning they can exist only on the same volume as the target. <br>
 > Executing `ls -i` will tell you what inode you have for a determined file.
 
 <img src="./assets/ls-i.png">
