@@ -88,6 +88,10 @@ Since env uses the system path, bash will run without you having to define its e
 
 <img src="./assets/awk.png">
 
+> A simple example of the useful usage of an **if statement** using `awk`. <br>
+
+<img src="./assets/awk-if-statement.png">
+
 ### - [Diff](https://linux.die.net/man/1/diff)
 > `diff` allows you to compare two files line by line.
 ```console
