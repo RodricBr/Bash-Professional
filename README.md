@@ -186,8 +186,6 @@ $ less file_*.txt
 > A token that performs a control function. <br>
 > It is a "newline" or one of the following: `||`, `&&`, `&`, `;`, `;;`, `;&`, `;;&`, `|`, `|&`, `(`, or `)`. (POSIX Definition) <br>
 
-> Every process receives three **File Descriptors**(FD) by default.
-
 > A `!` is not a control operator but a [Reserved Word](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_04). It becomes a logical NOT [negation operator] inside Arithmetic Expressions and inside test constructs (while still requiring an space delimiter). <br>
 
 #### 1.1 : List terminator <br>
