@@ -254,9 +254,9 @@ command1 |& command2
 <img src="./assets/exit-codes.png">
 
 > Where every process receives three **File Descriptors**(FD) by default:
-- stdin (0) - Exit Code refers to the **Standard Input** (data inserted to the program)
-- stdout (1) - Exit Code refers to the **Standard Output** (data printed/outputed by the program)
-- stderr (2) - Exit Code refers to the **Standard Error** (**from 2 - 255**, stands for messages of error)
+- stdin (0) - Exit Code refers to the **Standard Input** (data inserted to the program/process)
+- stdout (1) - Exit Code refers to the **Standard Output** (data printed/outputed by the program/process)
+- stderr (2) - Exit Code refers to the **Standard Error** (**from 2 - 255**, stands for messages of error outputed by a program/process)
 
 <br>
 
