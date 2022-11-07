@@ -122,7 +122,7 @@ $ diff -s file_1.txt file_2.txt
 -------------------------------------------------------------------------------
 - Another cool example, is using the -N, -a, -u and -r flags.
   Which shows a more simple way of understanding the differencies between
-  the files and also avoiding and with more information about the files.
+  the files, avoidinging incompatibilities and giving more information about them.
 
 $ diff -Naur file_1.txt file_2.txt
 --- file_1.txt  2022-11-07 14:34:03.870977100 -0300
