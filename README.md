@@ -116,6 +116,8 @@ $ diff -s file_1.txt file_2.txt
 ---
 > Changed-you
 > Added another line
+
+- 2c(2 changes) 2,3(Line 2 and 3)
 ```
 
 ### - [Dpkg](https://linux.die.net/man/1/dpkg)
