@@ -118,6 +118,20 @@ $ diff -s file_1.txt file_2.txt
 > Added another line
 
 - 2c(2 changes) 2,3(Line 2 and 3)
+
+-------------------------------------------------------------------------------
+- Another cool example, is using the -N, -a, -u and -r flags.
+  Which shows a more simple way of understanding the differencies between
+  the files and also avoiding and with more information about the files.
+
+$ diff -Naur file_1.txt file_2.txt
+--- file_1.txt  2022-11-07 14:34:03.870977100 -0300
++++ file_2.txt  2022-11-07 14:34:27.607286200 -0300
+@@ -1,2 +1,3 @@
+ Teste
+-Change-me
++Changed-you
++Added another line
 ```
 
 ### - [Dpkg](https://linux.die.net/man/1/dpkg)
