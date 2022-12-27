@@ -87,7 +87,8 @@ Since env uses the system path, bash will run without you having to define its e
 ### - Builtin & Keyword
 
 - Builtin: [about](https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html) <br>
-It is a command that has been implemented inside the shell for essential needs of the shell (`cd`, `pwd`, `eval`), or speed in general or to avoid conflicting interpretations of external utilities in some cases. Below are the list of builtins. (Or just execute `compgen -b` to show all builtins)
+It is a command that has been implemented inside the shell for essential needs of the shell (`cd`, `pwd`, `eval`), or speed in general or to avoid conflicting interpretations of external utilities in some cases. <br>
+Below are the list of builtins. (Or just execute `compgen -b` to show all builtins)
 
 <details>
 <summary>Expand view all builtins</summary>
@@ -159,8 +160,9 @@ wait
 </details>
 
 - Keyword: [about](https://www.gnu.org/software/bash/manual/html_node/Reserved-Word-Index.html) <br>
-A keyword is also known as "reserved word". (Execute `LESS=+/"keyword" man bash` for more info)
-And **Reserved Words** are words that have a special meaning to the shell. The following words are recognized as reserved when unquoted and either the first word of a simple command or the third word of a case or for command. (Or just execute `compgen -k` to show all keywords)
+A keyword is also known as "reserved word". (Execute `LESS=+/"keyword" man bash` for more info) <br>
+And **Reserved Words** are words that have a special meaning to the shell. <br>
+The following words are recognized as reserved when unquoted and either the first word of a simple command or the third word of a case or for command. (Or just execute `compgen -k` to show all keywords)
 
 <details>
 <summary>Expand to view all keywords</summary>
