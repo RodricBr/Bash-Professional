@@ -79,6 +79,44 @@ Since env uses the system path, bash will run without you having to define its e
 
 > **Important OBS**: From distro to distro, the location of **bash** or **python**, for example, can be different.
 
+<br>
+
+## Builtin / Keyword / 
+
+- Builtin: <br>
+It is a command that has been implemented inside the shell for essential needs of the shell (`cd`, `pwd`, `eval`), or speed in general or to avoid conflicting interpretations of external utilities in some cases.
+
+- Keyword: <br>
+A keyword is also known as "reserved word". (Execute `LESS=+/"keyword" man bash` for more info)
+And **Reserved Words** are words that have a special meaning to the shell. The following words are recognized as reserved when unquoted and either the first word of a simple command or the third word of a case or for command. (Or just execute `compgen -k` to show all keywords)
+
+```bash
+if
+then
+else
+elif
+fi
+case
+esac
+for
+select
+while
+until
+do
+done
+in
+function
+time
+{
+}
+!
+[[
+]]
+coproc
+```
+
+<br>
+
 ## Bash Commands
 
 ### - [Awk](https://linux.die.net/man/1/awk)
