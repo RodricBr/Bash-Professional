@@ -90,6 +90,10 @@ Since env uses the system path, bash will run without you having to define its e
 It is a command that has been implemented inside the shell for essential needs of the shell (`cd`, `pwd`, `eval`), or speed in general or to avoid conflicting interpretations of external utilities in some cases. <br>
 Below are the list of builtins. (Or just execute `compgen -b` to show all builtins)
 
+> **compgen** is a shell builtin. It displays possible completions depending on the options. <br>
+> Intended to be used from within a shell function generating possible completions. <br>
+> If the optional WORD argument is supplied, matches against WORD are generated. <br>
+
 <details>
 <summary>Expand view all builtins</summary>
 
