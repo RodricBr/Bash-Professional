@@ -86,6 +86,8 @@ Since env uses the system path, bash will run without you having to define its e
 - Builtin: <br>
 It is a command that has been implemented inside the shell for essential needs of the shell (`cd`, `pwd`, `eval`), or speed in general or to avoid conflicting interpretations of external utilities in some cases. Below are the list of builtins. (Or just execute `compgen -b` to show all builtins)
 
+<details>
+  <summary>Expand view all builtins</summary>
 ```bash
 .
 :
@@ -149,11 +151,14 @@ unalias
 unset
 wait
 ```
+</details>
 
 - Keyword: <br>
 A keyword is also known as "reserved word". (Execute `LESS=+/"keyword" man bash` for more info)
 And **Reserved Words** are words that have a special meaning to the shell. The following words are recognized as reserved when unquoted and either the first word of a simple command or the third word of a case or for command. (Or just execute `compgen -k` to show all keywords)
 
+<details>
+  <summary>Expand to view all keywords</summary>
 ```bash
 if
 then
@@ -178,6 +183,7 @@ time
 ]]
 coproc
 ```
+</details>
 
 <br>
 
