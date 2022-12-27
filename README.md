@@ -36,6 +36,8 @@
 
 ---
 
+<br>
+
 ## Introduction
 - First of all, what is the meaning of this repository? <br>
 
@@ -82,7 +84,7 @@ Since env uses the system path, bash will run without you having to define its e
 
 <br>
 
-## Builtin & Keyword
+### - Builtin & Keyword
 
 - Builtin: [about](https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html) <br>
 It is a command that has been implemented inside the shell for essential needs of the shell (`cd`, `pwd`, `eval`), or speed in general or to avoid conflicting interpretations of external utilities in some cases. Below are the list of builtins. (Or just execute `compgen -b` to show all builtins)
