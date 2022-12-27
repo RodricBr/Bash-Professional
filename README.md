@@ -84,7 +84,71 @@ Since env uses the system path, bash will run without you having to define its e
 ## Builtin / Keyword / 
 
 - Builtin: <br>
-It is a command that has been implemented inside the shell for essential needs of the shell (`cd`, `pwd`, `eval`), or speed in general or to avoid conflicting interpretations of external utilities in some cases.
+It is a command that has been implemented inside the shell for essential needs of the shell (`cd`, `pwd`, `eval`), or speed in general or to avoid conflicting interpretations of external utilities in some cases. Below are the list of builtins. (Or just execute `compgen -b` to show all builtins)
+
+```bash
+.
+:
+[
+alias
+bg
+bind
+break
+builtin
+caller
+cd
+command
+compgen
+complete
+compopt
+continue
+declare
+dirs
+disown
+echo
+enable
+eval
+exec
+exit
+export
+false
+fc
+fg
+getopts
+hash
+help
+history
+jobs
+kill
+let
+local
+logout
+mapfile
+popd
+printf
+pushd
+pwd
+read
+readarray
+readonly
+return
+set
+shift
+shopt
+source
+suspend
+test
+times
+trap
+true
+type
+typeset
+ulimit
+umask
+unalias
+unset
+wait
+```
 
 - Keyword: <br>
 A keyword is also known as "reserved word". (Execute `LESS=+/"keyword" man bash` for more info)
