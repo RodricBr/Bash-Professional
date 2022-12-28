@@ -5,6 +5,7 @@
 
 - [Bash Commands](#bash-commands)
 	- [awk](#--awk)
+	- [compgen](#--compgen)
 	- [diff](#--diff)
 	- [dpkg](#--dpkg)
 	- [less](#--less)
@@ -259,8 +260,6 @@ $ diff -Naur file_1.txt file_2.txt
 > `compgen` is a bash builtin that generates possible completion matches for word according to the options, <br>
 > which may be any option accepted by the complete builtin with the exception of -p and -r, and write the matches to the standard output.
 
-> Flags: `-abcdefgjksuv`
-
 ```console
 $ compgen -c
 - Shows a list of all executable programs on your system.
@@ -274,6 +273,8 @@ $ compgen -b
 $ compgen -v
 - Shows a list of all variables defined in the system, and even those that you
   defined manually.
+
+# Flags: "-abcdefgjksuv"
 ```
 
 ### - [Dpkg](https://linux.die.net/man/1/dpkg)
