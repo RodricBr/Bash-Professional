@@ -32,7 +32,7 @@
 -->
 
 <p align="center">
-  <img src="./assets/i-l-bash.png">
+  <img src="./assets/tron.png">
 </p>
 
 ---
