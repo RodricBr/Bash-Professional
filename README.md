@@ -281,6 +281,8 @@ $ compgen -a
 
 # Flags: "-abcdefgjksuv"
 ```
+- A fun little example of how it could be useful to you:
+<img src="./assets/banner-example.png" alt="banner example">
 
 ### - [Dpkg](https://linux.die.net/man/1/dpkg)
 > `dpkg` is a package manager for Debian, or Debian based distributions.
