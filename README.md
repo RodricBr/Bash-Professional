@@ -271,7 +271,12 @@ $ compgen -b
 
 ------------------------------------------------------------------------------
 $ compgen -v
-- Shows a list of all variables defined in the system, and even those that you
+- Shows a list of all variables defined in the system, counting those that you
+  defined manually.
+
+------------------------------------------------------------------------------
+$ compgen -a
+- Shows a list of all aliases defined in the system, counting those that you
   defined manually.
 
 # Flags: "-abcdefgjksuv"
