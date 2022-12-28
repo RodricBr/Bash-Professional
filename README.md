@@ -255,6 +255,27 @@ $ diff -Naur file_1.txt file_2.txt
 +Added another line
 ```
 
+### - [Compgen](https://www.gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html)
+> `compgen` is a bash builtin that generates possible completion matches for word according to the options, <br>
+> which may be any option accepted by the complete builtin with the exception of -p and -r, and write the matches to the standard output.
+
+> Flags: `-abcdefgjksuv`
+
+```console
+$ compgen -c
+- Shows a list of all executable programs on your system.
+  Using "wc -l" can help you count how many programs you have in total.
+
+------------------------------------------------------------------------------
+$ compgen -b
+- Shows a list of all builtins
+
+------------------------------------------------------------------------------
+$ compgen -v
+- Shows a list of all variables defined in the system, and even those that you
+  defined manually.
+```
+
 ### - [Dpkg](https://linux.die.net/man/1/dpkg)
 > `dpkg` is a package manager for Debian, or Debian based distributions.
 
@@ -266,9 +287,11 @@ $ sudo apt install fontconfig
 - The command above, will install "fc", which allows us to check/list all of the fonts installed on our system,
   by russing: "fc-list".
 
+------------------------------------------------------------------------------
 $ sudo apt install xfonts-terminus # Instalar a fonte Terminus
 - Installing the font "Terminus", from xfonts, which is the largest collection of fonts.
 
+------------------------------------------------------------------------------
 $ sudo dpkg-reconfigure -plow console-setup # Selecionar a fonte Terminus
 - Using dpkg-reconfigure followed by the option flag "-plow".
   "-plow" flag shows all questions, irrespective of whatever default might have been set elsewhere.
@@ -277,6 +300,7 @@ $ sudo dpkg-reconfigure -plow console-setup # Selecionar a fonte Terminus
   3- Select the font name. In this example, you'd have to select "Terminus" font.
   4- And finally, the desired font size.
 
+------------------------------------------------------------------------------
 $ cat /etc/default/console-setup
 - And to check if everything is as expected, we can cat console-setup
   and look for "FONTFACE", with the name of our font inside quotes.
