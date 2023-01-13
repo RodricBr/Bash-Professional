@@ -59,6 +59,8 @@ Eval = Executes the command <br>
 Print = Returns the results of the given command to the user <br>
 Loop = And awaits for another input <br>
 
+<br>
+
 - What is **Bash**? <br>
 
 Bash is just an application, and its primary job is to run other applications (in the form of commands) that are installed <br>
