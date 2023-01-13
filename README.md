@@ -48,6 +48,14 @@ a simple introduction, so that you won't be lost throughout the elapse of this r
 
 <br>
 
+- What is **Shell**? <br>
+The Shell is a REPL (Read, Eval, Print, Loop);
+Read = Reads the command given by the user
+Eval = Executes the command
+Print = Returns the results of the given command to the user
+Loop = And awaits for another input
+..to be continued..
+
 - What is **Bash**? <br>
 
 Bash is just an application, and its primary job is to run other applications (in the form of commands) that are installed <br>
