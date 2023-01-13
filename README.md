@@ -50,14 +50,14 @@ a simple introduction, so that you won't be lost throughout the elapse of this r
 
 - What is **Shell**? <br>
 
-The shell is a CLI (Command-Line Interface) program that processes and interprets kernel commands and outputs the results to the user.
+The Shell is a CLI (Command-Line Interface) program that processes and interprets kernel commands and outputs the results to the user. <br>
 In the old days, it was the only user interface available on a UNIX-like systems, such as Linux. Nowadays, we have graphical user interfaces (GUIs) in addition to command line interfaces (CLIs) such as the shell.
 
-The Shell is a REPL (Read, Eval, Print and Loop);
-Read = Reads the command given by the user
-Eval = Executes the command
-Print = Returns the results of the given command to the user
-Loop = And awaits for another input
+Shell is a "[REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)" (Read, Eval, Print and Loop); <br>
+Read = Reads the command given by the user <br>
+Eval = Executes the command <br>
+Print = Returns the results of the given command to the user <br>
+Loop = And awaits for another input <br>
 
 - What is **Bash**? <br>
 
