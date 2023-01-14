@@ -59,6 +59,8 @@ Eval = Executes the command <br>
 Print = Returns the results of the given command to the user <br>
 Loop = And awaits for another input <br>
 
+If you're really interested in shell history, I'll suggest this repository that shows a [shell ancestry](https://github.com/marcpaq/shellancestry) "tree".
+
 <br>
 
 - What is **Bash**? <br>
