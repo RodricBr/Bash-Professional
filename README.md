@@ -414,6 +414,11 @@ $ less file_*.txt
 - `|` : The pipe operator, passes the output of one command as input to another. A command built from the pipe operator is called a pipeline. <br>
 <img src="./assets/c-operators-5.png">
 
+> The pipe (as well as the parentheses) creates a **SubShell** to execute the commands, so use it only when it's really necessary. <br>
+> When you create a SubShell, you are going to export the entire environment of your current shell to the subshell you are creating, <br>
+> so it consumes a lot of time when used. However, most importantly, **anything done in a subshell is lost when the process terminates**. <br>
+> When the child shell dies, it can't send back to the parent shell what you created in it. <br>
+
 > Any output printed by `ls` is passed as input to `wc` (which will count words).
 
 - `|&` : This is a shorthand for `2>&1` | in bash and zsh. It passes both standard output and standard error of one command as input to another.
@@ -449,6 +454,12 @@ command1 |& command2
 command < file.txt
 ```
 
+<img src="./assets/do_not-do.png">
+
+> And here's a performance difference between these two cases:
+
+<img src="./assets/performance-diff.png">
+
 > Execute command on the contents of file.txt
 
 - `<>` : Same as above, but the file is open in **read+write** mode instead of **read-only**.
@@ -463,17 +474,6 @@ command <> file.txt
 ```bash
 command > out.txt
 ```
-
-> The pipe (as well as the parentheses) creates a **SubShell** to execute the commands, so use it only when it's really necessary. <br>
-> When you create a SubShell, you are going to export the entire environment of your current shell to the subshell you are creating, <br>
-> so it consumes a lot of time when used. However, most importantly, **anything done in a subshell is lost when the process terminates**. <br>
-> When the child shell dies, it can't send back to the parent shell what you created in it. <br>
-
-<img src="./assets/do_not-do.png">
-
-> And here's a performance difference between these two cases:
-
-<img src="./assets/performance-diff.png">
 
 > Save the output of command as `out.txt`. If the file exists, its contents will be overwritten and if it doesn't exists, it will be created.
 > This operator is also often used to choose whether something should be printed to standard error or standard output. Like so:
