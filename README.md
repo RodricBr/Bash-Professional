@@ -501,6 +501,8 @@ command >> out.txt
 - `<<<` - Here Strings : Replaces the `echo SOMETHING | CMD` to `CMD <<< SOMETHING`. And by the way, that's exactly why **Here Strings** were created, they have more performance than using it with pipe (`|`).
 
 > The pipe (as well as the parentheses) creates a **SubShell** to execute the commands, so use it only when it's really necessary.
+> When you create a SubShell, you are going to export the entire environment of your current shell to the subshell you are creating, <br>
+> so it consumes a lot of time when used. However, most importantly, **anything done in a subshell is lost when the process terminates**.
 
 <!--
 https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
