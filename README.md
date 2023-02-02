@@ -497,7 +497,6 @@ command >> out.txt
 
 #### All the characters we saw receive/send data from/to files, but in addition to these, we also have: <br>
 
-- `<<[-]` - Here Documents : Pass the interpreted line up to a label to a command
 - `<<<` - Here Strings : Replaces the `echo SOMETHING | CMD` to `CMD <<< SOMETHING`. And by the way, that's exactly why **Here Strings** were created, they have more performance than using it with pipe (`|`).
 
 > The pipe (as well as the parentheses) creates a **SubShell** to execute the commands, so use it only when it's really necessary.
@@ -510,6 +509,10 @@ command >> out.txt
 > And here's a performance difference between these two cases:
 
 <img src="./assets/performance-diff.png">
+
+- `<<[-]` - Here Documents : Pass the interpreted line up to a label to a command
+
+<img src="./assets/...">
 
 <!--
 https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
