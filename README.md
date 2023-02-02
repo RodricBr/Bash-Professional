@@ -505,6 +505,8 @@ command >> out.txt
 > so it consumes a lot of time when used. However, most importantly, **anything done in a subshell is lost when the process terminates**.
 > When the child shell dies, it can't send back to the parent shell what you created in it.
 
+<img src="./assets/do_not-do.png">
+
 <!--
 https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
 -->
