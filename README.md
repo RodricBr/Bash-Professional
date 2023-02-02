@@ -454,6 +454,9 @@ command1 |& command2
 command < file.txt
 ```
 
+> Instead of using `cat` to show the contents of a file and throw it's output to `wc -l` <br>
+> we use `<` to give input to a command. Just like so:
+
 <img src="./assets/do_not-do.png">
 
 > And here's a performance difference between these two cases:
