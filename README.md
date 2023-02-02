@@ -507,6 +507,10 @@ command >> out.txt
 
 <img src="./assets/do_not-do.png">
 
+> And here's a performance difference between these two cases:
+
+<img src="./assets/performance-diff.png">
+
 <!--
 https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
 -->
