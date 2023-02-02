@@ -495,9 +495,10 @@ command >> out.txt
 > A `>&` followed by a file descriptor number is a portable way to redirect a file descriptor, and `>&-` is a portable way to close a file descriptor.
 
 
-> All the characters we saw receive/send data from/to files, but in addition to these, we also have:
+#### All the characters we saw receive/send data from/to files, but in addition to these, we also have: <br>
+
 - `<<[-]` - Here Documents : Pass the interpreted line up to a label to a command
-- `<<<` - Here Strings : Replaces the `echo SOMETHING | CMD` to `CMD <<< SOMETHING`. And by the way, that's exactly why Here Strings were created, they have more performance than using it with pipe (`|`).
+- `<<<` - Here Strings : Replaces the `echo SOMETHING | CMD` to `CMD <<< SOMETHING`. And by the way, that's exactly why **Here Strings** were created, they have more performance than using it with pipe (`|`).
 
 <!--
 https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
