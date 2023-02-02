@@ -464,6 +464,17 @@ command <> file.txt
 command > out.txt
 ```
 
+> The pipe (as well as the parentheses) creates a **SubShell** to execute the commands, so use it only when it's really necessary. <br>
+> When you create a SubShell, you are going to export the entire environment of your current shell to the subshell you are creating, <br>
+> so it consumes a lot of time when used. However, most importantly, **anything done in a subshell is lost when the process terminates**. <br>
+> When the child shell dies, it can't send back to the parent shell what you created in it. <br>
+
+<img src="./assets/do_not-do.png">
+
+> And here's a performance difference between these two cases:
+
+<img src="./assets/performance-diff.png">
+
 > Save the output of command as `out.txt`. If the file exists, its contents will be overwritten and if it doesn't exists, it will be created.
 > This operator is also often used to choose whether something should be printed to standard error or standard output. Like so:
 ```bash
@@ -498,17 +509,6 @@ command >> out.txt
 #### All the characters we saw receive/send data from/to files, but in addition to these, we also have: <br>
 
 - `<<<` - Here Strings : Replaces the `echo SOMETHING | CMD` to `CMD <<< SOMETHING`. And by the way, that's exactly why **Here Strings** were created, they have more performance than using it with pipe (`|`).
-
-> The pipe (as well as the parentheses) creates a **SubShell** to execute the commands, so use it only when it's really necessary.
-> When you create a SubShell, you are going to export the entire environment of your current shell to the subshell you are creating, <br>
-> so it consumes a lot of time when used. However, most importantly, **anything done in a subshell is lost when the process terminates**.
-> When the child shell dies, it can't send back to the parent shell what you created in it.
-
-<img src="./assets/do_not-do.png">
-
-> And here's a performance difference between these two cases:
-
-<img src="./assets/performance-diff.png">
 
 - `<<[-]` - Here Documents : Uses a form of I/O redirection to feed a command list to an interactive program or a command, such as **ftp**, **cat**, or the **ex** text editor. It is also a special-purpose code block.
 
