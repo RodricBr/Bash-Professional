@@ -513,7 +513,7 @@ command >> out.txt
 
 - `<<<` - Here Strings : Replaces the `echo SOMETHING | CMD` to `CMD <<< SOMETHING`. And by the way, that's exactly why **Here Strings** were created, they have more performance than using it with pipe (`|`).
 
-<img src="./assets/here-strings.png">
+<img src="./assets/here-strings-1.png">
 
 > The **Here strings** (<<<) was created to avoid this type of construction that was very necessary. The problem is that the command after the pipe (`|`) is executed in a subshell and this fork, in addition to being slower, at the end destroys the entire environment created/modified by it.
 
