@@ -510,7 +510,7 @@ command >> out.txt
 
 <img src="./assets/performance-diff.png">
 
-- `<<[-]` - Here Documents : Pass the interpreted line up to a label to a command
+- `<<[-]` - Here Documents : Uses a form of I/O redirection to feed a command list to an interactive program or a command, such as **ftp**, **cat**, or the **ex** text editor. It is also a special-purpose code block.
 
 <img src="./assets/...">
 
