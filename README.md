@@ -447,6 +447,10 @@ command1 |& command2
 - stdout (1) - Exit Code refers to the **Standard Output** (data printed/outputed by the program/process)
 - stderr (2) - Exit Code refers to the **Standard Error** (**from 2 - 255**, stands for messages of error outputed by a program/process)
 
+> Here's a cool example of how file descriptors work: <br>
+
+<img src="./assets/file-descriptor-1.png">
+
 <br>
 
 - `<` : Gives input to a command.
