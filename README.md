@@ -229,48 +229,6 @@ coproc
 
 <img src="./assets/awk-if-statement.png">
 
-### - [Diff](https://linux.die.net/man/1/diff)
-> `diff` allows you to compare two files line by line.
-```console
-$ diff -s file_1.txt file_2.txt
-(Checking the difference of two given files)
-
-- The flag "-s" OR "--report-identical-files", reports when two files are the same.
-
--------------------------------------------------------------------------------
-Ex:
-$ cat file_1.txt file_2.txt
-Test
-Change-me
-
-Test
-Changed-you
-Added another line
-
-$ diff -s file_1.txt file_2.txt
-2c2,3
-< Change-me
----
-> Changed-you
-> Added another line
-
-- 2c(2 changes) 2,3(Line 2 and 3)
-
--------------------------------------------------------------------------------
-- Another cool example, is using the -N, -a, -u and -r flags.
-  Which shows a more simple way of understanding the differencies between
-  the files, avoidinging incompatibilities and giving more information about them.
-
-$ diff -Naur file_1.txt file_2.txt
---- file_1.txt  2022-11-07 14:34:03.870977100 -0300
-+++ file_2.txt  2022-11-07 14:34:27.607286200 -0300
-@@ -1,2 +1,3 @@
- Teste
--Change-me
-+Changed-you
-+Added another line
-```
-
 ### - [Cat](https://linux.die.net/man/1/cat)
 > Wouldn't be a complete repository without mentioning `cat`, the program which concatenates files and print them to the stdout. <br>
 > **Cat** is used to simply show the contents of any kind of file. <br>
@@ -314,6 +272,48 @@ $ compgen -a
 ```
 - A fun little example of how it could be useful to you:
 <img src="./assets/banner-example.png" alt="banner example">
+
+### - [Diff](https://linux.die.net/man/1/diff)
+> `diff` allows you to compare two files line by line.
+```console
+$ diff -s file_1.txt file_2.txt
+(Checking the difference of two given files)
+
+- The flag "-s" OR "--report-identical-files", reports when two files are the same.
+
+-------------------------------------------------------------------------------
+Ex:
+$ cat file_1.txt file_2.txt
+Test
+Change-me
+
+Test
+Changed-you
+Added another line
+
+$ diff -s file_1.txt file_2.txt
+2c2,3
+< Change-me
+---
+> Changed-you
+> Added another line
+
+- 2c(2 changes) 2,3(Line 2 and 3)
+
+-------------------------------------------------------------------------------
+- Another cool example, is using the -N, -a, -u and -r flags.
+  Which shows a more simple way of understanding the differencies between
+  the files, avoidinging incompatibilities and giving more information about them.
+
+$ diff -Naur file_1.txt file_2.txt
+--- file_1.txt  2022-11-07 14:34:03.870977100 -0300
++++ file_2.txt  2022-11-07 14:34:27.607286200 -0300
+@@ -1,2 +1,3 @@
+ Teste
+-Change-me
++Changed-you
++Added another line
+```
 
 ### - [Dpkg](https://linux.die.net/man/1/dpkg)
 > `dpkg` is a package manager for Debian, or Debian based distributions.
