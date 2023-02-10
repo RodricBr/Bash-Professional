@@ -271,6 +271,22 @@ $ diff -Naur file_1.txt file_2.txt
 +Added another line
 ```
 
+### - [Cat](https://linux.die.net/man/1/cat)
+> Wouldn't be a complete repository without mentioning `cat`, the program which concatenates files and print them to the stdout. <br>
+> **Cat** is used to simply show the contents of any kind of file. <br>
+
+> In this simple example below, I'm using the `-n` to number all output lines. <br>
+```console
+$ cat -n script.sh
+     1  #!/usr/bin/bash
+     2
+     3  echo -e "Hello, World\n"
+     4  echo -e "\nThis is a loop:"
+     5  for ((X_ == 1; X_ <= 10; X_ ++)); do
+     6    echo -e "$X_"
+     7  done
+```
+
 ### - [Compgen](https://www.gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html)
 > `compgen` is a bash builtin that generates possible completion matches for word according to the options, <br>
 > which may be any option accepted by the complete builtin with the exception of -p and -r, and write the matches to the standard output.
