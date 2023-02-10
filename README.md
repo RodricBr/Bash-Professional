@@ -231,7 +231,18 @@ coproc
 
 ### - [Cat](https://linux.die.net/man/1/cat)
 > Wouldn't be a complete repository without mentioning `cat`, the program which concatenates files and print them to the stdout. <br>
-> **Cat** is used to simply show the contents of any kind of file. <br>
+> **Cat** is used to simply show the contents of any kind of file. Just like so: <br>
+
+```console
+$ cat script.sh
+#!/usr/bin/bash
+
+echo -e "Hello, World\n"
+echo -e "\nThis is a loop:"
+for ((X_ == 1; X_ <= 10; X_ ++)); do
+  echo -e "$X_"
+done
+```
 
 > In this simple example below, I'm using the `-n` to number all output lines. <br>
 ```console
