@@ -17,7 +17,7 @@
 	- [Linked Files: Symbolic Links / Hard Links](#--linked-files--symbolic-links--hard-links-back-to-top)
 	- [String Manipulation](#string-manipulation-back-to-top)
 		- [Brace Expansion](#--brace-expansion--)
-		- [Command Substitution & Parameter Expansion](#--command-substitution---parameter-expansion-)
+		- [Command Substitution & Parameter Expansion](#--command-substitution---parameter-expansion--back-to-top)
 - [License](#license)
 
 <!--
