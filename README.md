@@ -837,6 +837,28 @@ echo "The length of the input string is: $LEN_"
 > There are other special characters that retain their special meaning inside double quotes. <br>
 > These exceptions includes: `$`, `${}`, `$()`, `$(())`, `\`(When used to escape special characters). <br>
 
+### - Arithimetic Expansion `$(())`
+> **Arithmetic Expansion** allows the evaluation of an arithmetic expression <br>
+> and the substitution of the result. The format for arithmetic expansion is: <br>
+
+```console
+$ $(( expression ))
+```
+The expression undergoes the same expansions as if it were within double quotes, but double quote characters in expression are not treated specially and are removed. All tokens in the expression undergo parameter and variable expansion, command substitution, and quote removal. The result is treated as the arithmetic expression to be evaluated. Arithmetic expansions may be nested.
+
+- The evaluation is performed according to the rules listed in [here](https://www.gnu.org/software/bash/manual/html_node/Shell-Arithmetic.html). If the expression is invalid, Bash prints a message indicating failure to the standard error and no substitution occurs.
+
+```console
+$ cat parameter.sh
+(($# == 0))&& { echo "Uso ${0##/} parâmetro(s)" >&2; exit 1;} || { echo "Parameter count: $#";}
+
+$ ./parameter.sh param1 Param2 PARAM3
+Parameter count: 3
+
+- Note how it starts counting by the second argument (1) instead of "0".
+  Because we're using "$#" that prints the number of arguments, and the argument
+  "0" is considered to be the program itself that is being executing.
+```
 
 <br>
 
