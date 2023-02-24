@@ -442,7 +442,7 @@ $ less file_*.txt
 - `|` : The pipe operator, passes the output of one command as input to another. A command built from the pipe operator is called a pipeline. <br>
 <img src="./assets/c-operators-5.png">
 
-> The pipe (as well as the parentheses) creates a **SubShell** to execute the commands, so use it only when it's really necessary. <br>
+> The pipe (as well as the Command Substitution) creates a **SubShell** to execute the commands, so use it only when it's really necessary. <br>
 > When you create a SubShell, you are going to export the entire environment of your current shell to the subshell you are creating, <br>
 > so it consumes a lot of time when used. However, most importantly, **anything done in a subshell is lost when the process terminates**. <br>
 > When the child shell dies, it can't send back to the parent shell what you created in it. <br>
@@ -808,7 +808,8 @@ Parameter count: 3
 > These include: `$`, `!`, `&`, `\`, ` `(Space, which bash uses to delimit tokens) <br>
 
 - Note: The command substitution is very different from piping. <br>
-  Piping, allows us to redirect the output of one command, to the standard input of another.
+  Piping, allows us to redirect the output of one command, to the standard input of another. <br>
+  The Command Substitution creates a **SubShell** to execute the commands given.
 ```console
 $ echo $(ls /etc/X11)
 
