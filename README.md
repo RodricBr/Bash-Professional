@@ -777,15 +777,22 @@ $ man{,}
 ```
 
 ### - ANSI-C Quoting `$''`
+> Causes escape sequences to be interpreted. <br>
 > Using `$` as a prefix tells Bash to try to find a variable with that name. <br>
 > `$'` is a special syntax (fully explained [here](https://www.gnu.org/software/bash/manual/html_node/ANSI_002dC-Quoting.html#ANSI_002dC-Quoting)) which enables **ANSI-C** string processing. <br>
 
 ```console
-$'\167'
+$ $'\167'
  18:52:39 up  1:26,  0 users,  load average: 0.52, 0.58, 0.59
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
 - "167" is the octal for the ASCII "w". The backslash lets the octal to be interpreted.
   "w" is a command which shows who is logged on and what they are doing.
+
+- I like to imagine ANSI-C Quoting as a medieval version of "echo -e", because...
+$ echo -e "\0167"
+w
+
+- This time "w" doesn't get interpreted, because it's just a string.
 ```
 
 > In this case, the single tick isn't "take value verbatim until the next single tick". It should be quite safe to use. The drawbacks are it's BASH only and quite uncommon, so many people will wonder what it means <br>
