@@ -10,7 +10,7 @@
 	- [diff](#--diff)
 	- [dpkg](#--dpkg)
 	- [less](#--less)
-	- [ls](#--ls)
+	- [ls](#--ls)$(echo -e '\0167')
 - [General](#general-back-to-top)
 	- [Control Operators](#--control-operators)
 	- [Redirection Operators](#--redirection-operators-no-images-since-output-is-not-shownvisible)
@@ -794,6 +794,10 @@ $ echo -e "\0167"
 w
 
 - This time "w" doesn't get interpreted, because it's just a string.
+  But to make it executable we can spawn a subshell, just like so:
+$ $(echo -e '\0167')
+ 19:14:56 up  1:48,  0 users,  load average: 0.52, 0.58, 0.59
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
 ```
 
 > In this case, the single tick isn't "take value verbatim until the next single tick". It should be quite safe to use. The drawbacks are it's BASH only and quite uncommon, so many people will wonder what it means <br>
