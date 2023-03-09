@@ -395,6 +395,12 @@ $ less file_*.txt
 
 ## General [(Back to Top)](#summary)
 
+### - File Permissions
+
+<img src="./assets/ls.png">
+
+...I'll do it later...
+
 ### - Control Operators
 > A token that performs a control function. <br>
 > It is a "newline" or one of the following: `||`, `&&`, `&`, `;`, `;;`, `;&`, `;;&`, `|`, `|&`, `(`, or `)`. (POSIX Definition) <br>
