@@ -10,7 +10,7 @@
 	- [diff](#--diff)
 	- [dpkg](#--dpkg)
 	- [less](#--less)
-	- [ls](#--ls)$(echo -e '\0167')
+	- [ls](#--ls)
 - [General](#general-back-to-top)
 	- [Control Operators](#--control-operators)
 	- [Redirection Operators](#--redirection-operators-no-images-since-output-is-not-shownvisible)
