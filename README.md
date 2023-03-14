@@ -663,6 +663,16 @@ $ readlink -m /usr/bin/awk
 
 ## String Manipulation [(Back to Top)](#summary)
 
+### - [Parameter Expansion](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Shell-Parameter-Expansion) `$`
+> The "`$`" character introduces **parameter expansion**, **command substitution**, or **arithmetic expansion**. <br>
+> The parameter name or symbol to be expanded may be enclosed in braces, which are optional but serve to protect <br>
+the variable to be expanded from characters immediately following it which could be interpreted as part of the name. <br>
+
+> When braces are used, the matching ending brace is the first "`}`" not escaped by a backslash or within a quoted string, <br>
+and not within an embedded arithmetic expansion, command substitution, or parameter expansion. <br>
+
+<img src="./assets/parameter-expansion.png">
+
 ### - Brace Expansion `{ }`
 - **Ex**: preamble{expansion}postscript
 
@@ -758,7 +768,6 @@ $ echo {10..55..5}%
 10% 15% 20% 25% 30% 35% 40% 45% 50% 55%
 
 - From 10 to 55, skipping 5. More simple!
-
 ```
 
 <br>
