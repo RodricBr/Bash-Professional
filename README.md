@@ -664,16 +664,6 @@ $ readlink -m /usr/bin/awk
 
 ## String Manipulation [(Back to Top)](#summary)
 
-### - [Parameter Expansion](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Shell-Parameter-Expansion) `$`
-> The "`$`" character introduces **parameter expansion**, **command substitution**, or **arithmetic expansion**. <br>
-> The parameter name or symbol to be expanded may be enclosed in braces, which are optional but serve to protect <br>
-the variable to be expanded from characters immediately following it which could be interpreted as part of the name. <br>
-
-> When braces are used, the matching ending brace is the first "`}`" not escaped by a backslash or within a quoted string, <br>
-and not within an embedded arithmetic expansion, command substitution, or parameter expansion. <br>
-
-<img src="./assets/parameter-expansion.png">
-
 ### - Brace Expansion `{ }`
 - **Ex**: preamble{expansion}postscript
 
@@ -842,10 +832,19 @@ Parameter count: 3
   "0" is considered to be the program itself that is being executing.
 ```
 
-### - Command Substitution `$()` & Parameter Expansion `${}` [(Back to Top)](#summary)
+### - Command Substitution `$()` & [Parameter Expansion](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Shell-Parameter-Expansion) `${} $() $(())` [(Back to Top)](#summary)
 > Command substitution allows us to use the output of a command as an argument of another command
 
-> The `$` sign is a symbol with special significance to bash. <br>
+> The "`$`" character introduces **parameter expansion**, **command substitution**, or **arithmetic expansion**. <br>
+
+<img src="./assets/parameter-expansion.png">
+
+> The parameter name or symbol to be expanded may be enclosed in braces, which are optional but serve to protect <br>
+the variable to be expanded from characters immediately following it which could be interpreted as part of the name. <br>
+
+> When braces are used, the matching ending brace is the first "`}`" not escaped by a backslash or within a quoted string, <br>
+and not within an embedded arithmetic expansion, command substitution, or parameter expansion. <br>
+
 > But there are other characters that also have special significance to bash. <br>
 > These include: `$`, `!`, `&`, `\`, ` `(Space, which bash uses to delimit tokens) <br>
 
