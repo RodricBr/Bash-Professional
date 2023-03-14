@@ -19,7 +19,7 @@
 		- [Brace Expansion](#--brace-expansion--)
 		- [ANSI-C Quoting](#--ansi-c-quoting-)
 		- [Arithmetic Expansion](#--arithmetic-expansion-)
-		- [Command Substitution & Parameter Expansion](#--command-substitution---parameter-expansion--back-to-top)
+		- [Command Substitution & Parameter Expansion](#--command-substitution---parameter-expansion----back-to-top)
 - [License](#license)
 
 <!--
