@@ -16,7 +16,6 @@
 	- [Redirection Operators](#--redirection-operators-no-images-since-output-is-not-shownvisible)
 	- [Linked Files: Symbolic Links / Hard Links](#--linked-files--symbolic-links--hard-links-back-to-top)
 	- [String Manipulation](#string-manipulation-back-to-top)
-		- [Parameter Expansion](#--parameter-expansion-)
 		- [Brace Expansion](#--brace-expansion--)
 		- [ANSI-C Quoting](#--ansi-c-quoting-)
 		- [Arithmetic Expansion](#--arithmetic-expansion-)
