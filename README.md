@@ -677,6 +677,8 @@ and not within an embedded arithmetic expansion, command substitution, or parame
 ### - Brace Expansion `{ }`
 - **Ex**: preamble{expansion}postscript
 
+> **OBS**: Brace Expansion does not starts with a `$`, only when we're dealing with **Parameter Expansion**. <br>
+
 > The pattern takes the form of an unchanging `preamble`, followed by a variable `expansion` component, followed by an unchanging `postscript`. <br>
 > The varying part of the pattern is enclosed by a pair of curly braces. <br>
 > The constant part before the opening brace is called `preamble`, and the constant part trailing <br>
