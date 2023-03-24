@@ -803,6 +803,13 @@ w
 $ $(echo -e '\0167')
  19:14:56 up  1:48,  0 users,  load average: 0.52, 0.58, 0.59
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+
+-------------------------------------------------------------------------------
+- Bonus cool epic example
+$ echo 'I'$'\012am'''$'\012''Rodric'$'\041'''
+I
+am
+Rodric!
 ```
 
 > In this case, the single tick isn't "take value verbatim until the next single tick". It should be quite safe to use. The drawbacks are it's BASH only and quite uncommon, so many people will wonder what it means <br>
