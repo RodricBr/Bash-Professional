@@ -791,7 +791,8 @@ $ man{,}
 $ $'\167'
  18:52:39 up  1:26,  0 users,  load average: 0.52, 0.58, 0.59
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
-- "167" is the octal for the ASCII "w". The backslash lets the octal to be interpreted.
+- "167" is the UTF-8 octal for the ASCII "w". With backslash-escaped characters
+  in string replaced as specified by the ANSI C standard.
   "w" is a command which shows who is logged on and what they are doing.
 
 - I like to imagine ANSI-C Quoting as a medieval version of "echo -e", because...
