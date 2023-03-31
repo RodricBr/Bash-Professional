@@ -397,9 +397,9 @@ $ less file_*.txt
 
 ### - File Permissions
 
-<img src="./assets/ls.png">
+- As seen from the `ls` command explanation:
 
-- As seen from the `ls` command explanation
+<img src="./assets/ls.png">
 
 ```txt
 -------------------------------
