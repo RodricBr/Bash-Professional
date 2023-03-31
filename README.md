@@ -13,6 +13,7 @@
 	- [less](#--less)
 	- [ls](#--ls)
 - [General](#general-back-to-top)
+	- [File Permissions](#--file-permissions)
 	- [Control Operators](#--control-operators)
 	- [Redirection Operators](#--redirection-operators-no-images-since-output-is-not-shownvisible)
 	- [Linked Files: Symbolic Links / Hard Links](#--linked-files--symbolic-links--hard-links-back-to-top)
