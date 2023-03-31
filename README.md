@@ -116,7 +116,7 @@ Below are the list of builtins. (Or just execute `compgen -b` to show all builti
 > If the optional WORD argument is supplied, matches against WORD are generated. <br>
 
 <details>
-<summary>Expand view all builtins</summary>
+<summary>Expand to view all builtins</summary>
 
 ```bash
 .
