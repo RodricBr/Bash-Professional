@@ -277,29 +277,8 @@ $ chmod =x programa.sh
   that a directory's unmentioned set user and group ID bits are not affected.
 ```
 
-- Using chmod to change permissions with binary.
-- Here's the binary logic behind it:
-
-```console
-Symbolic:  r-- -w- --x  |  421
-Binary:    100 010 001  |  -------
-Decimal:    4   2   1   |  000 = 0
-                        |  001 = 1
-Symbolic:  rwx r-x r-x  |  010 = 2
-Binary:    111 101 101  |  011 = 3
-Decimal:    7   5   5   |  100 = 4
-           /   /   /    |  101 = 5
-Owner  ---/   /   /     |  110 = 6
-Group  ------/   /      |  111 = 7
-Others ---------/       |  Binary to Octal chart
-
-------------------------------------------------------------------------------
-$ chmod 755 programa.sh
-- Gives full permissions for the Owner and Read and Execute permission for Others
-  7 == u=rwx (4+2+1 for user/owner)
-  5 == g=rx (4+1 for group)
-  5 == o=rx (4+1 for others)
-```
+- See [File Permissions](#--file-permissions) for more information about the binary logic behind
+- changing permissions using Octal Mode (numbers like `chmod 777`)
 
 ### - [Compgen](https://www.gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html)
 > `compgen` is a bash builtin that generates possible completion matches for word according to the options, <br>
@@ -471,6 +450,28 @@ So rw- r-- r--
 chmod 644 file.txt means change
 the permissions to: rw- r-- r--
 -------------------------------
+```
+
+- Using chmod to change permissions with binary and octal mode.
+```console
+Symbolic:  r-- -w- --x  |  421
+Binary:    100 010 001  |  -------
+Decimal:    4   2   1   |  000 = 0
+                        |  001 = 1
+Symbolic:  rwx r-x r-x  |  010 = 2
+Binary:    111 101 101  |  011 = 3
+Decimal:    7   5   5   |  100 = 4
+           /   /   /    |  101 = 5
+Owner  ---/   /   /     |  110 = 6
+Group  ------/   /      |  111 = 7
+Others ---------/       |  Binary to Octal chart
+
+------------------------------------------------------------------------------
+$ chmod 755 programa.sh
+- Gives full permissions for the Owner and Read and Execute permission for Others
+  7 == u=rwx (4+2+1 for user/owner)
+  5 == g=rx (4+1 for group)
+  5 == o=rx (4+1 for others)
 ```
 
 ### - Control Operators
