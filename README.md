@@ -221,6 +221,8 @@ coproc
 
 <br>
 
+<hr>
+
 ## Bash Commands
 
 ### - [Awk](https://linux.die.net/man/1/awk)
@@ -260,6 +262,8 @@ $ cat -n script.sh
      7  done
 ```
 
+<hr>
+
 ### - [Chmod](https://linux.die.net/man/1/chmod)
 > The chmod command allows users to change read and write permissions in UNIX systems.
 
@@ -280,6 +284,8 @@ $ chmod =x programa.sh
 
 - See [File Permissions](#--file-permissions) for more information about the binary logic behind
 - changing permissions using Octal Mode (numbers like `chmod 777`)
+
+<hr>
 
 ### - [Compgen](https://www.gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html)
 > `compgen` is a bash builtin that generates possible completion matches for word according to the options, <br>
@@ -308,6 +314,8 @@ $ compgen -a
 ```
 - A fun little example of how it could be useful to you:
 <img src="./assets/banner-example.png" alt="banner example">
+
+<hr>
 
 ### - [Diff](https://linux.die.net/man/1/diff)
 > `diff` allows you to compare two files line by line.
@@ -351,6 +359,8 @@ $ diff -Naur file_1.txt file_2.txt
 +Added another line
 ```
 
+<hr>
+
 ### - [Dpkg](https://linux.die.net/man/1/dpkg)
 > `dpkg` is a package manager for Debian, or Debian based distributions.
 
@@ -381,6 +391,8 @@ $ cat /etc/default/console-setup
   and look for "FONTFACE", with the name of our font inside quotes.
 ```
 
+<hr>
+
 ### - [Less](https://linux.die.net/man/1/less)
 > `less` allows you to view (**but not change**) the contents of a text file one screen at a time.
 ```console
@@ -405,6 +417,8 @@ $ less file_*.txt
 
 ```
 
+<hr>
+
 ### - [Ls](https://linux.die.net/man/1/ls)
 > `ls` is used to list file or directory contents.
 
@@ -412,9 +426,10 @@ $ less file_*.txt
 
 <br>
 
----
+<hr>
 
 <br>
+
 
 ## General [(Back to Top)](#summary)
 
@@ -474,6 +489,8 @@ $ chmod 755 programa.sh
   5 == g=rx (4+1 for group)
   5 == o=rx (4+1 for others)
 ```
+
+<hr>
 
 ### - Control Operators
 > A token that performs a control function. <br>
@@ -641,7 +658,7 @@ https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-
 
 <br>
 
----
+<hr>
 
 <br>
 
@@ -731,7 +748,7 @@ $ readlink -m /usr/bin/awk
 
 <br>
 
----
+<hr>
 
 <br>
 
@@ -856,6 +873,12 @@ $ man{,}
   it doesn't add anything, but it adds a new word anyway.
 ```
 
+<br>
+
+<hr>
+
+<br>
+
 ### - ANSI-C Quoting `$''`
 > Causes escape sequences to be interpreted. <br>
 > Using `$` as a prefix tells Bash to try to find a variable with that name. <br>
@@ -889,6 +912,12 @@ Rodric!
 
 > In this case, the single tick isn't "take value verbatim until the next single tick". It should be quite safe to use. The drawbacks are it's BASH only and quite uncommon, so many people will wonder what it means <br>
 
+<br>
+
+<hr>
+
+<br>
+
 ### - Arithmetic Expansion `$(())`
 > **Arithmetic Expansion** allows the evaluation of an arithmetic expression <br>
 > and the substitution of the result. The format for arithmetic expansion is: <br>
@@ -912,6 +941,12 @@ Parameter count: 3
   Because we're using "$#" that prints the number of arguments, and the argument
   "0" is considered to be the program itself that is being executing.
 ```
+
+<br>
+
+<hr>
+
+<br>
 
 ### - Command Substitution `$()` & [Parameter Expansion](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Shell-Parameter-Expansion) `${} $() $(())` [(Back to Top)](#summary)
 > Command substitution allows us to use the output of a command as an argument of another command
@@ -968,7 +1003,9 @@ the forth(3) character)
 - Keeping in mind that the first character starts by "0" (0, 1, 2, 3, 4... etc)
 
 ```
+
 - [Cool examples of Command Substitution](https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html)
+
 ```console
 - Example of a simple program that reads from standard input and counts
   the amount of characters a user puts in.
@@ -984,6 +1021,10 @@ echo "The length of the input string is: $LEN_"
 
 > There are other special characters that retain their special meaning inside double quotes. <br>
 > These exceptions includes: `$`, `${}`, `$()`, `$(())`, `\`(When used to escape special characters). <br>
+
+<br>
+
+<hr>
 
 <br>
 
