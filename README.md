@@ -258,6 +258,24 @@ $ cat -n script.sh
      7  done
 ```
 
+### - [Chmod](https://linux.die.net/man/1/chmod)
+> The chmod command allows users to change read and write permissions in UNIX systems.
+
+```console
+$ chmod +x programa.sh
+- Changes the permission for "programa.sh" to executable, hence the "+x".
+  The operator "+" causes the selected file mode bits to be added to the existing file mode bits of each file.
+  
+$ chmod -x programa.sh
+- Removes the executable permission for "programa.sh".
+  The operator "-" causes them to be removed.
+
+$ chmod =x programa.sh
+- Ignores all permissions, set them exactly as provided.
+  The operator "=" causes them to be added and causes unmentioned bits to be removed except
+  that a directory's unmentioned set user and group ID bits are not affected.
+```
+
 ### - [Compgen](https://www.gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html)
 > `compgen` is a bash builtin that generates possible completion matches for word according to the options, <br>
 > which may be any option accepted by the complete builtin with the exception of -p and -r, and write the matches to the standard output.
@@ -396,6 +414,8 @@ $ less file_*.txt
 ## General [(Back to Top)](#summary)
 
 ### - File Permissions
+
+> Each file has a set of file mode bits that control the kinds of access that users have to that file. They can be represented either in symbolic form or as an octal number
 
 - As seen from the `ls` command explanation:
 
