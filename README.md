@@ -397,7 +397,34 @@ $ less file_*.txt
 
 ### - File Permissions
 
-<img src="./assets/ls.png">
+<!--<img src="./assets/ls.png">-->
+
+```txt
+-------------------------------
+File permissions are 12 bits
+
+              User  Group  All
+0 0 0         110    110   100
+| | V sticky  VVV    VVV   VVV
+| V setgid    rwx    rwx   rwx
+V setuid
+
+For the r/w/x bits:
+1 means "allowed" in binary
+0 means "not allowed"
+
+-------------------------------
+
+110 in binary is 6
+
+So rw- r-- r--
+=  110 100 100
+=   6   4   4
+
+chmod 644 file.txt means change
+the permissions to: rw- r-- r--
+-------------------------------
+```
 
 ...I'll do it later...
 
