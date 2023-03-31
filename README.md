@@ -397,7 +397,8 @@ $ less file_*.txt
 
 ### - File Permissions
 
-<!--<img src="./assets/ls.png">-->
+<img src="./assets/ls.png">
+- As seen from the `ls` command explanation
 
 ```txt
 -------------------------------
@@ -425,8 +426,6 @@ chmod 644 file.txt means change
 the permissions to: rw- r-- r--
 -------------------------------
 ```
-
-...I'll do it later...
 
 ### - Control Operators
 > A token that performs a control function. <br>
