@@ -236,6 +236,8 @@ coproc
 
 <img src="./assets/awk-if-statement.png">
 
+<hr>
+
 ### - [Cat](https://linux.die.net/man/1/cat)
 > Wouldn't be a complete repository without mentioning `cat`, the program which concatenates files and print them to the stdout. <br>
 > **Cat** is used to simply show the contents of any kind of file. Just like so: <br>
@@ -490,7 +492,11 @@ $ chmod 755 programa.sh
   5 == o=rx (4+1 for others)
 ```
 
+<br>
+
 <hr>
+
+<br>
 
 ### - Control Operators
 > A token that performs a control function. <br>
