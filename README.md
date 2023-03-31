@@ -6,6 +6,7 @@
 - [Bash Commands](#bash-commands)
 	- [awk](#--awk)
 	- [cat](#--cat)
+	- [chmod](#--chmod)
 	- [compgen](#--compgen)
 	- [diff](#--diff)
 	- [dpkg](#--dpkg)
