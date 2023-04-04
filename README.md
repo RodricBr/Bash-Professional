@@ -958,6 +958,7 @@ Parameter count: 3
 > Command substitution allows us to use the output of a command as an argument of another command
 
 > The "`$`" character introduces **Parameter Expansion**, **Command Substitution**, or **Arithmetic Expansion**. <br>
+> `()` just creates a compound command, running the commands inside the parentheses. `$()` does the same, but also substitutes the output. <br>
 
 <img src="./assets/parameter-expansion.png">
 
