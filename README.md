@@ -954,7 +954,7 @@ Parameter count: 3
 
 <br>
 
-### - Command Substitution `$()` & [Parameter Expansion](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Shell-Parameter-Expansion) `${} $() $(())` [(Back to Top)](#summary)
+### - [Command Substitution](https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html) `$()` & [Parameter Expansion](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Shell-Parameter-Expansion) `${} $() $(())` [(Back to Top)](#summary)
 > Command substitution allows us to use the output of a command as an argument of another command
 
 > The "`$`" character introduces **Parameter Expansion**, **Command Substitution**, or **Arithmetic Expansion**. <br>
