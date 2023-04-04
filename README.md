@@ -960,7 +960,7 @@ Parameter count: 3
 > The "`$`" character introduces **Parameter Expansion**, **Command Substitution**, or **Arithmetic Expansion**. <br>
 > `()` just creates a compound command, running the commands inside the parentheses. `$()` does the same, but also substitutes the output. <br>
 
-<img src="./assets/parameter-expansion.png">
+<img src="./assets/parameter-expansion1.png">
 
 > The parameter name or symbol to be expanded may be enclosed in braces, which are optional but serve to protect <br>
 the variable to be expanded from characters immediately following it which could be interpreted as part of the name. <br>
