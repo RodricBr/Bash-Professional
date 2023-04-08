@@ -822,7 +822,10 @@ I love Rio_Novo. I love Vila_Bela. I love Benedito.
 
 <br>
 
-> It can also contain a range of integers or characters using the operator `..`
+#### - Range Expansion `{N..N}` `{N,N}` (**N** for number) <br>
+> It can also contain a range of integers or characters using the operator `..` <br>
+> In this case, we call it **Range Expansion** <br>
+
 ```console
 $ echo Number-{1..5}
 Number-1 Number-2 Number-3 Number-4 Number-5
