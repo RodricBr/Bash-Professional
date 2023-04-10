@@ -12,7 +12,7 @@
 	- [dpkg](#--dpkg)
 	- [less](#--less)
 	- [ls](#--ls)
-	- [nice](#--nice--renice--introduction-to-processes)
+	- [nice / renice & intruduction to processes](#--nice--renice--introduction-to-processes)
 - [General](#general-back-to-top)
 	- [File Permissions](#--file-permissions)
 	- [Control Operators](#--control-operators)
