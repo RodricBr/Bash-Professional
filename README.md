@@ -437,6 +437,7 @@ $ less file_*.txt
 > We can check a process niceness by using `top/htop` and looking for the initials **NI**, <br>
 > or by using `ps` with the flag `-eo uid,pid,ppid,pri,ni,cmd`, again checking for the **NI** initials. <br>
 
+<img src="./assets/nice-ps.png">
 
 #### - Types of Processes
 In general, we can classify processes into the following types:
