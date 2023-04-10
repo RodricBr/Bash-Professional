@@ -446,12 +446,15 @@ In general, we can classify processes into the following types:
 The kernel gives these processes priority values from **100** to **139**, with **120** being the default. Being **100** means higher priority, that is, it will have more CPU usage time, greater time sharing. In this case **139** is the lowest priority, lowest time. <br>
 
 - **Real-Time**: Processes that need to be executed immediately, not following process scheduling. <br>
-These are usually internal kernel processes. These processes receive priorities from **1** to **99**, and it is common for it to be represented by the "rt" code, for real-time.
+These are usually internal kernel processes. These processes receive priorities from **1** to **99**, and it is common for it to be represented by the "rt" code, for real-time. <br>
 
-The priority of a process is defined automatically and dynamically by the Linux kernel, assuming the values mentioned above.
+#### - Priority (PRI) vs Nice (NI)
 
-**NICE** is an attribute that allows the administrator or user to influence the priority of the process. <br>
-When we use nice and renice commands to set this attribute, we are setting a NICE which will consequently impact the priority. By default, the NICE of a process is **0**.
+- The priority of a process is defined automatically and dynamically by the Linux kernel, assuming the values mentioned above.
+
+- **NICE** is an attribute that allows the administrator or user to influence the priority of the process. <br>
+When we use nice and renice commands to set this attribute, we are setting a NICE which will consequently impact the priority. <br>
+By default, the NICE of a process is **0**.
 
 <br>
 
