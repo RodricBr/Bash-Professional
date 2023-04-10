@@ -429,7 +429,7 @@ $ less file_*.txt
 
 <hr>
 
-### - [Nice](https://linux.die.net/man/1/nice)
+### - [Nice](https://linux.die.net/man/1/nice) / Renice & Introduction to processes.
 > `nice` is used to add modified scheduling priority to certain processes. <br>
 > Runs a command with an adjusted niceness, which affects process scheduling. <br>
 > Nicenesses range from **-20** (most favorable scheduling) to **19** (least favorable).
@@ -475,6 +475,9 @@ $ grep prio /proc/<PID OR waitor.sh>/sched
 - Notice that now our process is not +12 niceness.
   It used to be 120. And 120 + 12 = 132, that's our current priority.
   
+$ sudo renice -12 -p <PID>
+- Only root can increase the priority of a process, so we execute renice with sudo.
+------------------------------------------------------------------------------
 - If you couldn't find the sched file, try recursively grepping using the command:
 $ grep -Hnri "prio" /proc/<PID>/
 ```
