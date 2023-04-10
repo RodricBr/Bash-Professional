@@ -12,6 +12,7 @@
 	- [dpkg](#--dpkg)
 	- [less](#--less)
 	- [ls](#--ls)
+	- [nice](#--nice)
 - [General](#general-back-to-top)
 	- [File Permissions](#--file-permissions)
 	- [Control Operators](#--control-operators)
@@ -417,7 +418,6 @@ $ less file_*.txt
 - Less can open multiple files at once, and you can
   navigate through them using: ":p" (Previous) and
   ":n" (Next)
-
 ```
 
 <hr>
@@ -426,6 +426,15 @@ $ less file_*.txt
 > `ls` is used to list file or directory contents.
 
 <img src="./assets/ls.png">
+
+<hr>
+
+### - [Nice](https://linux.die.net/man/1/nice)
+> `nice` is used to add modified scheduling priority to certain processes. <br>
+> Runs a command with an adjusted niceness, which affects process scheduling. <br>
+
+> We can check a process niceness by using `top/htop` and looking for the initials **NI**, <br>
+> or by using `ps` with the flag `-eo uid,pid,ppid,pri,ni,cmd`, again checking for the **NI** initials. <br>
 
 <br>
 
