@@ -12,7 +12,7 @@
 	- [dpkg](#--dpkg)
 	- [less](#--less)
 	- [ls](#--ls)
-	- [nice](#--nice)
+	- [nice](#--nice--renice--introduction-to-processes)
 - [General](#general-back-to-top)
 	- [File Permissions](#--file-permissions)
 	- [Control Operators](#--control-operators)
@@ -429,7 +429,7 @@ $ less file_*.txt
 
 <hr>
 
-### - [Nice](https://linux.die.net/man/1/nice) / Renice & Introduction to processes.
+### - [Nice](https://linux.die.net/man/1/nice) / [Renice](https://linux.die.net/man/1/renice) & Introduction to processes.
 > `nice` is used to add modified scheduling priority to certain processes. <br>
 > Runs a command with an adjusted niceness, which affects process scheduling. <br>
 > Nicenesses range from **-20** (most favorable scheduling) to **19** (least favorable).
