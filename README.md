@@ -477,6 +477,15 @@ $ grep prio /proc/<PID OR waitor.sh>/sched
   
 $ sudo renice -12 -p <PID>
 - Only root can increase the priority of a process, so we execute renice with sudo.
+
+$ grep prio /proc/<PID OR waitor.sh>/sched
+- Now our priority is 108. With a lower value, the process has a higher priority,
+  a higher time-sharing in the CPU/s.
+
+$ top
+- Notice how the process that we're modifying now shows "PR" as "08",
+  which is short for 180. And "NI"(nice) -12.
+
 ------------------------------------------------------------------------------
 - If you couldn't find the sched file, try recursively grepping using the command:
 $ grep -Hnri "prio" /proc/<PID>/
