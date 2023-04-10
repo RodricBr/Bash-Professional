@@ -491,10 +491,6 @@ $ top
 $ grep -Hnri "prio" /proc/<PID>/
 ```
 
-Going even deeper, we can grep the priority of a process through the file `/proc/<PID>/sched`. <br>
-Or simply doing `grep prio /proc/<PID>/sched`.
-
-
 <br>
 
 <hr>
