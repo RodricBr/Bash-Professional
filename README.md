@@ -432,9 +432,25 @@ $ less file_*.txt
 ### - [Nice](https://linux.die.net/man/1/nice)
 > `nice` is used to add modified scheduling priority to certain processes. <br>
 > Runs a command with an adjusted niceness, which affects process scheduling. <br>
+> Nicenesses range from **-20** (most favorable scheduling) to **19** (least favorable).
 
 > We can check a process niceness by using `top/htop` and looking for the initials **NI**, <br>
 > or by using `ps` with the flag `-eo uid,pid,ppid,pri,ni,cmd`, again checking for the **NI** initials. <br>
+
+
+#### - Types of Processes
+In general, we can classify processes into the following types:
+
+- **Conventional**: Normal system processes. <br>
+The kernel gives these processes priority values from **100** to **139**, with **120** being the default. Being **100** means higher priority, that is, it will have more CPU usage time, greater time sharing. In this case **139** is the lowest priority, lowest time. <br>
+
+- **Real-Time**: Processes that need to be executed immediately, not following process scheduling. <br>
+These are usually internal kernel processes. These processes receive priorities from **1** to **99**, and it is common for it to be represented by the "rt" code, for real-time.
+
+The priority of a process is defined automatically and dynamically by the Linux kernel, assuming the values mentioned above.
+
+**NICE** is an attribute that allows the administrator or user to influence the priority of the process. <br>
+When we use nice and renice commands to set this attribute, we are setting a NICE which will consequently impact the priority. By default, the NICE of a process is **0**.
 
 <br>
 
