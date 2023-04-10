@@ -475,6 +475,8 @@ $ grep prio /proc/<PID OR waitor.sh>/sched
 - Notice that now our process is not +12 niceness.
   It used to be 120. And 120 + 12 = 132, that's our current priority.
   
+- If you couldn't find the sched file, try recursively grepping using the command:
+$ grep -Hnri "prio" /proc/<PID>/
 ```
 
 Going even deeper, we can grep the priority of a process through the file `/proc/<PID>/sched`. <br>
