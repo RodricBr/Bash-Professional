@@ -456,6 +456,31 @@ These are usually internal kernel processes. These processes receive priorities 
 When we use nice and renice commands to set this attribute, we are setting a NICE which will consequently impact the priority. <br>
 By default, the NICE of a process is **0**.
 
+```console
+# Checking the priority of a process:
+$ nice -n11 waitor.sh &
+- Adding a niceness of 11 to the waitor.sh (throwing it to the background using "&").
+  (waitor.sh was a quick .sh file I made for example)
+
+$ cat /proc/<PID OR waitor.sh>/sched
+- In here, we'll see a bunch of information about that process.
+  But grepping for the word "prio" will return us the priority of that process, which in my case is 120.
+  Remember that 120 is the default priority that the kernel gives.
+
+------------------------------------------------------------------------------
+$ renice 12 -p <PID>
+- Adding an additional "12" of niceness to the given process.
+
+$ grep prio /proc/<PID OR waitor.sh>/sched
+- Notice that now our process is not +12 niceness.
+  It used to be 120. And 120 + 12 = 132, that's our current priority.
+  
+```
+
+Going even deeper, we can grep the priority of a process through the file `/proc/<PID>/sched`. <br>
+Or simply doing `grep prio /proc/<PID>/sched`.
+
+
 <br>
 
 <hr>
