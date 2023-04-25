@@ -1107,15 +1107,40 @@ echo "The length of the input string is: $LEN_"
 ### - [Process Substitution](https://www.gnu.org/software/bash/manual/html_node/Process-Substitution.html) `<()` & `>()`
 > Process Substitution allows a process's input or output to be referred to using a filename.
 
-> The `<(list)` syntax is supported by both, **bash** and **zsh**. It provides a way to pass the output of a command "`list`" to another command when using a pipe "`|`" is not possible.<br>
-> For example, when a command just doesn't support input from **Stdin** or you need the output of multiple commands: <br>
+The `<(list)` syntax is supported by both, **bash** and **zsh**. It provides a way to pass the output of a command "`list`" to another command when using a pipe "`|`" is not possible.<br>
+
+For example, when a command just doesn't support input from **Stdin** or you need the output of multiple commands: <br>
 
 ```console
 $ diff <(ls dirA) <(ls dirB)
 ```
 
-> `<(list)` connects the output of list with a file in `/dev/fd`, if supported by the system, otherwise a named pipe "`FIFO`" is used (which also depends on support by the system; neither manual says what happens if both mechanisms are not supported, presumably it aborts with an error). <br>
-> The name of the file is then passed as argument on the command line. <br>
+`<(list)` connects the output of list with a file in `/dev/fd`, if supported by the system, otherwise a named pipe "`FIFO`" is used (which also depends on support by the system; neither manual says what happens if both mechanisms are not supported, presumably it aborts with an error). <br>
+
+The name of the file is then passed as argument on the command line. <br>
+
+- There are cases in bash where you can't use pipes: <br>
+
+```console
+$ some_command | some_other_command
+```
+> Because pipes introduce subshells for each component of the pipeline, when the subshells exits, any side-effects you were relying on would disappear. <br>
+
+For example, this contrived example: <br>
+
+```console
+$ cat file | while read line; do ((count++)); done
+$ echo $count
+```
+> Will display a blank line, because the "`$count`" variable does not exist in the current shell. <br>
+
+A bash Process Substitution allows you to avoid this problem by allowing you to read from the "some_command" output like you would from a file.
+Like so:
+```console
+$ while read line; do ((count++)); done < <(cat file)
+# ....................................1.2
+$ echo $count   # the variable *does* exist in the current shell
+```
 
 <br>
 
