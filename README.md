@@ -1104,6 +1104,15 @@ echo "The length of the input string is: $LEN_"
 
 <br>
 
+### - [Process Substitution](https://www.gnu.org/software/bash/manual/html_node/Process-Substitution.html) `<()` & `>()`
+> Process Substitution allows a process's input or output to be referred to using a filename.
+
+<br>
+
+<hr>
+
+<br>
+
 # License
 > This repository is under the MIT License. See [LICENSE](https://github.com/RodricBr/Bash-Professional/blob/main/LICENSE) file for more information.
 
