@@ -18,12 +18,13 @@
 	- [Control Operators](#--control-operators)
 	- [Redirection Operators](#--redirection-operators-no-images-since-output-is-not-shownvisible)
 	- [Linked Files: Symbolic Links / Hard Links](#--linked-files--symbolic-links--hard-links-back-to-top)
-	- [String Manipulation](#string-manipulation-back-to-top)
+	- [Shell Expansions / String Manipulation](#string-manipulation-back-to-top)
 		- [Brace Expansion](#--brace-expansion--)
 			- [Range Expansion](#--range-expansion-nn-nn-n-for-number-)
 		- [ANSI-C Quoting](#--ansi-c-quoting-)
 		- [Arithmetic Expansion](#--arithmetic-expansion-)
 		- [Command Substitution & Parameter Expansion](#--command-substitution---parameter-expansion----back-to-top)
+		- [Process Substitution](#--)
 - [License](#license)
 
 <!--
