@@ -24,7 +24,7 @@
 		- [ANSI-C Quoting](#--ansi-c-quoting-)
 		- [Arithmetic Expansion](#--arithmetic-expansion-)
 		- [Command Substitution & Parameter Expansion](#--command-substitution---parameter-expansion----back-to-top)
-		- [Process Substitution](#--)
+		- [Process Substitution](#--process-substitution---)
 - [License](#license)
 
 <!--
@@ -1106,6 +1106,16 @@ echo "The length of the input string is: $LEN_"
 
 ### - [Process Substitution](https://www.gnu.org/software/bash/manual/html_node/Process-Substitution.html) `<()` & `>()`
 > Process Substitution allows a process's input or output to be referred to using a filename.
+
+> The `<(list)` syntax is supported by both, **bash** and **zsh**. It provides a way to pass the output of a command "`list`" to another command when using a pipe "`|`" is not possible.<br>
+> For example, when a command just doesn't support input from **Stdin** or you need the output of multiple commands: <br>
+
+```console
+$ diff <(ls dirA) <(ls dirB)
+```
+
+> `<(list)` connects the output of list with a file in `/dev/fd`, if supported by the system, otherwise a named pipe "`FIFO`" is used (which also depends on support by the system; neither manual says what happens if both mechanisms are not supported, presumably it aborts with an error). <br>
+> The name of the file is then passed as argument on the command line. <br>
 
 <br>
 
