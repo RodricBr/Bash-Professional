@@ -56,7 +56,7 @@ a simple introduction, so that you won't be lost throughout the elapse of this r
 
 <br>
 
-- What is **Shell**? <br>
+### What is **Shell**? <br>
 
 The Shell is a CLI (Command-Line Interface) program that processes and interprets kernel commands and outputs the results to the user. <br>
 In the old days, it was the only user interface available on a UNIX-like systems, such as Linux. Nowadays, we have graphical user interfaces (GUIs) in addition to command line interfaces (CLIs) such as the shell.
@@ -67,11 +67,11 @@ Eval = Executes the command <br>
 Print = Returns the results of the given command to the user <br>
 Loop = And awaits for another input <br>
 
-If you're really interested in shell history, I'll suggest this repository that shows a [shell ancestry](https://github.com/marcpaq/shellancestry) "tree".
+<!--If you're really interested in shell history, I'll suggest this repository that shows a [shell ancestry](https://github.com/marcpaq/shellancestry) "tree".-->
 
 <br>
 
-- What is **Bash**? <br>
+### What is **Bash**? <br>
 
 Bash is just an application, and its primary job is to run other applications (in the form of commands) that are installed <br>
 on the same system. It reads commands from the user input or from a file of commands and executes them, usually by turning <br>
@@ -85,7 +85,35 @@ most sh scripts can be run by Bash without modification.
 
 <br>
 
-- How to execute a Bash **program**? <br>
+### **sh** = **bash**? <br>
+For a long time, `/bin/sh` used to point to `/bin/bash` on most GNU/Linux systems.
+As a result, it had almost become safe to ignore the difference between the two. But that started to change recently.
+
+Some popular examples of systems where `/bin/sh` does not point to `/bin/bash` (and on some of which /bin/bash may not even exist) are:
+
+- 1: Modern Debian and Ubuntu systems, which symlink sh to dash by default;
+- 2: Busybox, which is usually run during the Linux system boot time as part of initramfs. It uses the ash shell implementation.
+- 3: BSD systems, and in general any non-Linux systems. OpenBSD uses pdksh, a descendant of the KornShell. FreeBSD's sh is a descendant of the original Unix Bourne shell. Solaris has its own sh which for a long time was not POSIX-compliant; a free implementation is available from the Heirloom project.
+
+How can you find out what `/bin/sh` points to on your system?
+
+The complication is that `/bin/sh` could be a symbolic link or a hard link. If it's a symbolic link, a portable way to resolve it is:
+```console
+$ file -h /bin/sh
+/bin/sh: symbolic link to bash
+```
+
+If it's a hard link, try: <br>
+```console
+$ find -L /bin -samefile /bin/sh
+/bin/sh
+/bin/bash
+```
+In fact, the `-L` flag covers both symlinks and hardlinks, but the disadvantage of this method is that it is not portable — POSIX does not require find to support the -samefile option, although both GNU find and FreeBSD find support it.
+
+<br>
+
+### How to execute a Bash **program**? <br>
 
 To get started, you'll need to create a file using `touch`, `vim file.txt`... etc, using the `.bash` OR the `.sh` file extension. <br>
 Although in Linux you don't need to specify the file extension, since Linux automatically identifies if the file is a simple text file, <br>
@@ -105,6 +133,10 @@ and the following parameter is the command that will be executed by the env in t
 Since env uses the system path, bash will run without you having to define its exact path, making it faster than the default <br>
 
 > **Important OBS**: From distro to distro, the location of **bash** or **python**, for example, can be different.
+
+<br>
+ 
+### What is **POSIX-conformant**?
 
 <br>
 
@@ -958,6 +990,7 @@ $ man{,}
 > Causes escape sequences to be interpreted. <br>
 > Using `$` as a prefix tells Bash to try to find a variable with that name. <br>
 > `$'` is a special syntax (fully explained [here](https://www.gnu.org/software/bash/manual/html_node/ANSI_002dC-Quoting.html#ANSI_002dC-Quoting)) which enables **ANSI-C** string processing. <br>
+> **Note:** ANSI-C Quoting is not POSIX.
 
 ```console
 $ $'\167'
