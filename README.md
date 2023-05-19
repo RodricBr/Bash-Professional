@@ -56,9 +56,8 @@
 ## Introduction
 - First of all, what is the meaning of this repository? <br>
 
-In this repository, I'll create a way to simply the learning path to become a Bash Professional, everything I learn, <br>
-I see that I think is going to be usefull I add to this repository. If you're not into GNU/Linux Bash, I'll give you <br>
-a simple introduction, so that you won't be lost throughout the elapse of this repository.
+In this repository, I'll create a way to simply the learning path to become a GNU/Linux Bash Professional, everything I learn, <br>
+I see that I think is going to be usefull I add to this repository. First, we'll have an introduction of GNU/Linux Bash, so that we won't be lost throughout the elapse of this repository.
 
 <br>
 
