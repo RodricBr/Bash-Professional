@@ -1,6 +1,12 @@
 <h2 align="center">Summary</h2>
 
 - [Introduction](#introduction)
+	- [What is Shell](#--what-is-shell-)
+	- [What is Bash](#--what-is-bash-)
+	- [sh = bash?](#--sh--bash-)
+	- [What is Dash in Debian](#--what-is-dash-in-debian-)
+	- [How to execute a Bash program](#--how-to-execute-a-bash-program-)
+	- [What is POSIX-Conformant](#--what-is-posix-conformant-)
 	- [Builtin & Keyword](#--builtin--keyword)
 
 - [Bash Commands](#bash-commands)
