@@ -56,7 +56,7 @@ a simple introduction, so that you won't be lost throughout the elapse of this r
 
 <br>
 
-### What is **Shell**? <br>
+### - What is **Shell**? <br>
 
 The Shell is a CLI (Command-Line Interface) program that processes and interprets kernel commands and outputs the results to the user. <br>
 In the old days, it was the only user interface available on a UNIX-like systems, such as Linux. Nowadays, we have graphical user interfaces (GUIs) in addition to command line interfaces (CLIs) such as the shell.
@@ -71,7 +71,7 @@ Loop = And awaits for another input <br>
 
 <br>
 
-### What is **Bash**? <br>
+### - What is **Bash**? <br>
 
 Bash is just an application, and its primary job is to run other applications (in the form of commands) that are installed <br>
 on the same system. It reads commands from the user input or from a file of commands and executes them, usually by turning <br>
@@ -85,7 +85,7 @@ most sh scripts can be run by Bash without modification.
 
 <br>
 
-### **sh** = **bash**? <br>
+### - **sh** = **bash**? <br>
 For a long time, `/bin/sh` used to point to `/bin/bash` on most GNU/Linux systems.
 As a result, it had almost become safe to ignore the difference between the two. But that started to change recently.
 
@@ -113,7 +113,24 @@ In fact, the `-L` flag covers both symlinks and hardlinks, but the disadvantage 
 
 <br>
 
-### How to execute a Bash **program**? <br>
+### - What is **Dash** in **Debian**? <br>
+
+In GNU/Linux Debian, **Dash** was created to be the default `/bin/sh` for Debian. It is based on **ash** and is much faster than bash to interpret shell scripts/commands, up to 4x faster. However, it does not offer the practicalities of bash (autocomplete, aliasing, greater customization, autocompletion of various software, etc...)
+
+To check if you are using **Bash** or **Dash**:
+```console
+$ echo $0
+bash
+
+OR
+
+$ cut -d '' -f1 /proc/$$/cmdline
+bash
+```
+
+<br>
+
+### - How to execute a Bash **program**? <br>
 
 To get started, you'll need to create a file using `touch`, `vim file.txt`... etc, using the `.bash` OR the `.sh` file extension. <br>
 Although in Linux you don't need to specify the file extension, since Linux automatically identifies if the file is a simple text file, <br>
@@ -136,7 +153,7 @@ Since env uses the system path, bash will run without you having to define its e
 
 <br>
  
-### What is **POSIX-conformant**?
+### - What is **POSIX-conformant**?
 
 <br>
 
