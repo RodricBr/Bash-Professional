@@ -83,6 +83,8 @@ features from the Korn shell (ksh) and the C shell (csh). It is intended to conf
 and Tools standard. It offers functional improvements over sh for both programming and interactive use. In addition, <br>
 most sh scripts can be run by Bash without modification.
 
+Bash supports a `--posix` option switch, which makes it more **[POSIX-compliant](#)**. It also tries to mimic **POSIX** if invoked as **sh**.
+
 <br>
 
 ### - **sh** = **bash**? <br>
