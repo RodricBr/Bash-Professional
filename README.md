@@ -83,7 +83,8 @@ features from the Korn shell (ksh) and the C shell (csh). It is intended to conf
 and Tools standard. It offers functional improvements over sh for both programming and interactive use. In addition, <br>
 most sh scripts can be run by Bash without modification.
 
-Bash supports a `--posix` option switch, which makes it more **[POSIX-compliant](#)**. It also tries to mimic **POSIX** if invoked as **sh**.
+Bash supports a `--posix` option switch, which makes it more **[POSIX-compliant](#--what-is-posix-conformant)**. It also tries to mimic **POSIX** if invoked as **sh**.
+Bash also supports sh. Bash is a shell replacement for the Bourne shell. Bash is superset of sh. 
 
 <br>
 
@@ -112,6 +113,8 @@ $ find -L /bin -samefile /bin/sh
 /bin/bash
 ```
 In fact, the `-L` flag covers both symlinks and hardlinks, but the disadvantage of this method is that it is not portable — POSIX does not require find to support the -samefile option, although both GNU find and FreeBSD find support it.
+
+[More info](https://stackoverflow.com/questions/5725296/difference-between-sh-and-bash)
 
 <br>
 
@@ -155,7 +158,19 @@ Since env uses the system path, bash will run without you having to define its e
 
 <br>
  
-### - What is **POSIX-conformant**?
+### - What is **POSIX-conformant**? <br>
+
+POSIX is a set of standards defining how POSIX-compliant systems should work. Bash is not actually a POSIX compliant shell. In a scripting language we denote the interpreter as `#!/bin/bash` (shebang as explained above).
+
+#### Analogy:
+
+- Shell is like an interface or specifications or API.
+- sh is a class which implements the Shell interface.
+- Bash is a subclass of the sh.
+
+<img src="https://i.stack.imgur.com/8Xvox.jpg">
+
+In other words, Bash is **POSIX-conformant**, even where the POSIX specification differs from traditional sh behavior ([see Bash POSIX Mode](https://www.gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html) for more info)
 
 <br>
 
