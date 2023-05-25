@@ -957,6 +957,17 @@ $ echo "I love "{Rio_Novo,Vila_Bela,Benedito}.
 I love Rio_Novo. I love Vila_Bela. I love Benedito.
 ```
 
+- In addition, we can use brace expansion to execute a command block without having to spawn a subshell. <br>
+```console
+$ { echo a; wc -l urls.txt; echo $BASHPID; }
+a
+9 urls.txt
+8
+
+- Notice that we have to use space in the beginning of the expansion
+  between the command and the brace character ( {<SPACE><COMMAND> ).
+```
+
 <br>
 
 #### - Range Expansion `{N..N}` `{N,N}` (**N** for number) <br>
