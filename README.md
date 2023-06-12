@@ -21,6 +21,7 @@
 	- [ls](#--ls)
 	- [nice / renice & intruduction to processes](#--nice--renice--introduction-to-processes)
 	- [paste](#--paste)
+	- [seq](#--seq)
 - [General](#general-back-to-top)
 	- [File Permissions](#--file-permissions)
 	- [Control Operators](#--control-operators)
@@ -372,7 +373,6 @@ $ chmod =x programa.sh
 ### - [Cut](https://linux.die.net/man/1/cut)
 > `cut` is a command which removes/replaces/selects sections from each line of given files.
 
-> Basic example:
 ```console
 $ ls arq[1-4] | cut -d " " -f1
 arq1
@@ -701,6 +701,48 @@ $ seq 4 | paste -sd\* | bc
 
 $ seq -s\* 5
 1*2*3*4
+```
+
+<hr>
+
+### - [Seq](https://linux.die.net/man/1/seq)
+> `seq` simply prints a sequence of numbers.
+
+```console
+$ seq 1 5
+1
+2
+3
+4
+5
+
+- Printing from 1 to 5.
+------------------------------------------------------------------------------
+$ seq 5 2 20
+5
+7
+9
+11
+13
+15
+17
+19
+
+- Priting from 5 to 20 skipping 2 numbers each time.
+
+------------------------------------------------------------------------------
+$ seq -s " " 1 10
+1 2 3 4 5 6 7 8 9 10
+
+- Printing from 1 to 10 and using the "-s" separator option flag,
+  which basically uses a string to separate numbers.
+  
+------------------------------------------------------------------------------
+$ seq -ws " " 10
+01 02 03 04 05 06 07 08 09 10
+
+- Printing from 1 to 10 using the "-w" (equal width) which equalizes width by
+  padding with leading zeroes separator flag. (1 in sequence of 100 turns into 001)
 ```
 
 <br>
