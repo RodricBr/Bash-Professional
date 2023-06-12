@@ -49,9 +49,9 @@
 -->
 
 <p align=center>
-  <img align="center" src="https://img.shields.io/github/stars/RodricBr/Bash-Professional?color=00BC19&logo=apachespark&logoColor=D9E0EE&style=for-the-badge&labelColor=191c27"> <br>
-  <img align="center" src="https://img.shields.io/github/last-commit/RodricBr/Bash-Professional?&logo=github&style=for-the-badge&color=00BC19&logoColor=D9E0EE&labelColor=191c27"> <br>
-  <img align="center" src="https://img.shields.io/github/repo-size/RodricBr/Bash-Professional?color=00BC19&logo=hackthebox&logoColor=D9E0EE&style=for-the-badge&labelColor=191c27"> <br>
+  <img align="center" src="https://img.shields.io/github/stars/RodricBr/Bash-Professional?color=00BC19&logo=apachespark&logoColor=D9E0EE&style=for-the-badge&labelColor=191c27">
+  <img align="center" src="https://img.shields.io/github/last-commit/RodricBr/Bash-Professional?&logo=github&style=for-the-badge&color=00BC19&logoColor=D9E0EE&labelColor=191c27"
+  <img align="center" src="https://img.shields.io/github/repo-size/RodricBr/Bash-Professional?color=00BC19&logo=hackthebox&logoColor=D9E0EE&style=for-the-badge&labelColor=191c27">
   <img src="./assets/tron.png">
 </p>
 
