@@ -13,12 +13,14 @@
 	- [awk](#--awk)
 	- [cat](#--cat)
 	- [chmod](#--chmod)
+	- [cut](#--cut)
 	- [compgen](#--compgen)
 	- [diff](#--diff)
 	- [dpkg](#--dpkg)
 	- [less](#--less)
 	- [ls](#--ls)
 	- [nice / renice & intruduction to processes](#--nice--renice--introduction-to-processes)
+	- [paste](#--paste)
 - [General](#general-back-to-top)
 	- [File Permissions](#--file-permissions)
 	- [Control Operators](#--control-operators)
@@ -314,7 +316,7 @@ coproc
 
 ### - [Cat](https://linux.die.net/man/1/cat)
 > Wouldn't be a complete repository without mentioning `cat`, the program which concatenates files and print them to the stdout. <br>
-> **Cat** is used to simply show the contents of any kind of file. Just like so: <br>
+> `cat` is generally used (shouldn't be) to show the contents of any kind of files. Just like so: <br>
 ```console
 $ cat script.sh
 #!/usr/bin/bash
@@ -326,7 +328,7 @@ for ((X_ == 1; X_ <= 10; X_ ++)); do
 done
 ```
 
-> In this simple example, I'm using the `-n` flag to number all output lines. <br>
+> In this simple example, I'm using the `-n` option flag to number all output lines, including blank lines. <br>
 ```console
 $ cat -n script.sh
      1  #!/usr/bin/bash
@@ -341,7 +343,7 @@ $ cat -n script.sh
 <hr>
 
 ### - [Chmod](https://linux.die.net/man/1/chmod)
-> The chmod command allows users to change read and write permissions in UNIX systems.
+> `chmod` is a command that allows users to change read and write permissions in UNIX systems.
 
 ```console
 $ chmod +x programa.sh
@@ -360,6 +362,11 @@ $ chmod =x programa.sh
 
 - See [File Permissions](#--file-permissions) for more information about the binary logic behind
 - changing permissions using Octal Mode (numbers like `chmod 777`)
+
+<hr>
+
+### - [Cut](https://linux.die.net/man/1/cut)
+> `cut` is a 
 
 <hr>
 
@@ -561,6 +568,23 @@ $ top
 ------------------------------------------------------------------------------
 - If you couldn't find the sched file, try recursively grepping using the command:
 $ grep -Hnri "prio" /proc/<PID>/
+```
+
+<hr>
+
+### - [Paste](https://linux.die.net/man/1/paste)
+> `paste` write lines consisting of the sequentially corresponding lines from each file, separated by TABs, to standard output. <br>
+> With no FILE, or when FILE is -, read standard input. <br>
+
+> Using paste without any arguments and only calling one file each time will simply display the contents of the determined file.
+```console
+$ paste numbers.txt
+123456
+
+$ paste example.txt
+12
+345
+6789
 ```
 
 <br>
