@@ -609,6 +609,27 @@ $ paste odd.txt even.txt -d+
 5+6
 7+8
 9+10
+
+$ paste odd.txt even.txt -d+ | bc
+3
+7
+11
+15
+19
+- Throwing the output from paste's command into bc (basic calculator)
+```
+
+> Adding a header to both columns using cat (right way of using cat, which concatenates files)
+```console
+$ echo -e "Odd\tEven" | cat - <(paste odd.txt even.txt)
+Odd     Even
+1       2
+3       4
+5       6
+7       8
+9       10
+- Note: cat sees "-" as a filename, it treats it as a synonym for stdin.
+  In simple terms, it receives data from primary input (echo).
 ```
 
 <br>
