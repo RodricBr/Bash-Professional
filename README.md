@@ -743,6 +743,30 @@ $ seq -ws " " 10
 
 - Printing from 1 to 10 using the "-w" (equal width) which equalizes width by
   padding with leading zeroes separator flag. (1 in sequence of 100 turns into 001)
+
+------------------------------------------------------------------------------
+$ seq -f "Version: %02g" 2 4
+Version: 02
+Version: 03
+Version: 04
+
+- "-f" option flag is used to generate sequence in a formatted manner.
+  "%02g" uses the format of the printf internal bash command. The "%02g" stands
+  for use the output format: %g (which is the default) but with a 0 in front of the number.
+  The leading 0 is used as padding only if necessary for printing lines 1-9 of the sequence.
+  No 0 padding is necessary for printing lines 10-99 of the sequence.
+
+- For example:
+
+$ seq -f "Version: %05g" 2 4
+Version: 00002
+Version: 00003
+Version: 00004
+
+$ seq -f "Version: %01g" 2 4
+Version: 2
+Version: 3
+Version: 4
 ```
 
 <br>
