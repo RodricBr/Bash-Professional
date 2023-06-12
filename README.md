@@ -301,14 +301,14 @@ coproc
 
 ## Bash Commands
 
+> **Note**
+>
+> Use the command `info` before any command you'd like to get more information about.
+
 ### - [Awk](https://linux.die.net/man/1/awk)
 > `awk` is a pattern scanning and processing language. <br>
 > Awk is used as a command as often as it is used as an interpreted script, <br>
 > and can be useful to write tiny but effective programs in the bash command line.
-
-> **Note**
->
-> Use the command `info` before any command you'd like to get more information about.
 
 <img src="./assets/awk.png">
 
