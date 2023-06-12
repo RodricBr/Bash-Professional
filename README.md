@@ -592,12 +592,23 @@ $ paste example.txt
 6789
 ```
 
-> Using paste while calling multiple files will print its contents side by side, like so:
+> Using paste while calling multiple files will print its contents side by side. Like so:
 ```console
 $ paste numbers.txt example.txt
 123     12
 456     345
         6789
+```
+
+> We can also use paste with a delimiter to reuse characters from the user's given input instead of TABs that paste uses as default.
+> The tabs will be turned into "+" characters.
+```console
+$ paste odd.txt even.txt -d+
+1+2
+3+4
+5+6
+7+8
+9+10
 ```
 
 <br>
