@@ -308,7 +308,7 @@ coproc
 
 > **Note**
 >
-> Use the command `info` before any command you'd like to get more info.
+> Use the command `info` before any command you'd like to get more information about.
 
 <img src="./assets/awk.png">
 
