@@ -610,12 +610,14 @@ $ paste odd.txt even.txt -d+
 7+8
 9+10
 
+------------------------------------------------------------------------------
 $ paste odd.txt even.txt -d+ | bc
 3
 7
 11
 15
 19
+
 - Throwing the output from paste's command into bc (basic calculator)
 ```
 
@@ -628,10 +630,37 @@ Odd     Even
 5       6
 7       8
 9       10
+
 - Note: cat sees "-" as a filename, it treats it as a synonym for stdin.
-  In simple terms, it receives data from primary/standard input (echo).
+  In simple terms, it receives data from primary/standard input (echo), and so cat concatanates odd.txt and even.txt files.
   
-  All programs and utilities that are compiled with the "getopts" library accepts "-" (dash) as the primary/standard input or output. 
+  IMPORTANT: All programs and utilities that are compiled with the "getopts" libbash library accepts "-" (dash) as the primary/standard input or output. 
+  For more info about getopts lib: https://manpages.ubuntu.com/manpages/jammy/man3/getopts.3.html
+```
+
+> Pasting in serial with one file at a time instead of in parallel:
+```console
+$ paste -s odd.txt
+1       3       5       7       9
+
+$ paste -sd+ odd.txt
+1+3+5+7+9
+
+- Adding the delimiter flag (-d) alongside the serial flag (-s).
+
+------------------------------------------------------------------------------
+$ paste -sd+ odd.txt | bc
+25
+
+- Throwing the paste's output into bc.
+
+------------------------------------------------------------------------------
+$ ls arq[1-8] | paste -sd'\t\t\n'
+arq1	arq2	arq3
+arq4	arq5	arq6
+arq7	arq8
+
+- Paste's delimiter option flag can be composed of multiple delimiters.
 ```
 
 <br>
@@ -1263,7 +1292,7 @@ echo "The length of the input string is: $LEN_"
 
 The `<(list)` syntax is supported by both, **bash** and **zsh**. It provides a way to pass the output of a command "`list`" to another command when using a pipe "`|`" is not possible.<br>
 
-For example, when a command just doesn't support input from **Stdin** or you need the output of multiple commands: <br>
+For example, when a command just doesn't support input from **stdin** or you need the output of multiple commands: <br>
 
 ```console
 $ diff <(ls dirA) <(ls dirB)
@@ -1294,6 +1323,17 @@ Like so:
 $ while read line; do ((count++)); done < <(cat file)
 # ....................................1.2
 $ echo $count   # the variable *does* exist in the current shell
+```
+
+> Another cool example from one of the sections of this repository:
+```console
+$ echo -e "Odd\tEven" | cat - <(paste odd.txt even.txt)
+Odd     Even
+1       2
+3       4
+5       6
+7       8
+9       10
 ```
 
 <br>
