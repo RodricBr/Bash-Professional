@@ -663,6 +663,23 @@ arq7	arq8
 - Paste's delimiter option flag can be composed of multiple delimiters.
 ```
 
+> Creating a factorial using `seq` and `paste`:
+```console
+$ seq 4 | paste -sd\*
+1*2*3*4
+
+$ seq 4 | paste -sd\* | bc
+24
+
+- Throwing into bc
+
+------------------------------------------------------------------------------
+- We could shorten it using seq's own way to specify the delimiter:
+
+$ seq -s\* 5
+1*2*3*4
+```
+
 <br>
 
 <hr>
