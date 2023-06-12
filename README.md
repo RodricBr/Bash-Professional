@@ -306,6 +306,10 @@ coproc
 > Awk is used as a command as often as it is used as an interpreted script, <br>
 > and can be useful to write tiny but effective programs in the bash command line.
 
+> **Note**
+>
+> Use the command `info` before any command you'd like to get more info.
+
 <img src="./assets/awk.png">
 
 > A simple example of the useful usage of an **if statement** using `awk`. <br>
@@ -579,12 +583,21 @@ $ grep -Hnri "prio" /proc/<PID>/
 > Using paste without any arguments and only calling one file each time will simply display the contents of the determined file.
 ```console
 $ paste numbers.txt
-123456
+123
+456
 
 $ paste example.txt
 12
 345
 6789
+```
+
+> Using paste while calling multiple files will print its contents side by side, like so:
+```console
+$ paste numbers.txt example.txt
+123     12
+456     345
+        6789
 ```
 
 <br>
