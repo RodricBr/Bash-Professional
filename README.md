@@ -629,7 +629,9 @@ Odd     Even
 7       8
 9       10
 - Note: cat sees "-" as a filename, it treats it as a synonym for stdin.
-  In simple terms, it receives data from primary input (echo).
+  In simple terms, it receives data from primary/standard input (echo).
+  
+  All programs and utilities that are compiled with the "getopts" library accepts "-" (dash) as the primary/standard input or output. 
 ```
 
 <br>
