@@ -370,7 +370,29 @@ $ chmod =x programa.sh
 <hr>
 
 ### - [Cut](https://linux.die.net/man/1/cut)
-> `cut` is a 
+> `cut` is a command which removes/replaces/selects sections from each line of given files.
+
+> Basic example:
+```console
+$ ls arq[1-4] | cut -d " " -f1
+arq1
+arq2
+arq3
+arq4
+
+- OBS: Default output without using cut: arq1  arq2  arq3  arq4
+- "-d" delimiter option flag considering space as a field separator or delimiter.
+  So we'll cut the delimiter "space" from field/line 1. (Removes all spaces from the first line)
+```
+
+> Cutting from line N to N:
+```console
+$ seq 10 | cut -f3-5 -d$'\n'
+
+- seq 10 will output numbers 1-10 on each 10 lines (I'm just simulating a file).
+  cut with the option flag "-f" will select from fields 3 to 5 on the lines. (From line 3 to 5)
+  and will add a line break delimiter using the "-d" option flag (used the ANSI-C Quoting to interpret the line break "\n").
+```
 
 <hr>
 
@@ -675,6 +697,7 @@ $ seq 4 | paste -sd\* | bc
 
 ------------------------------------------------------------------------------
 - We could shorten it using seq's own way to specify the delimiter:
+  "-s" for separator.
 
 $ seq -s\* 5
 1*2*3*4
