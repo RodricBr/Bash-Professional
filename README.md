@@ -3,7 +3,7 @@
 - [Introduction](#introduction)
 	- [What is Shell](#--what-is-shell-)
 	- [What is Bash](#--what-is-bash-)
-	- [sh = bash?](#--sh--bash-)
+	- [SH = Bash?](#--sh--bash-)
 	- [What is Dash in Debian](#--what-is-dash-in-debian-)
 	- [How to execute a Bash program](#--how-to-execute-a-bash-program-)
 	- [What is POSIX-Conformant](#--what-is-posix-conformant-)
@@ -101,7 +101,7 @@ Bash also supports sh. Bash is a shell replacement for the Bourne shell. Bash is
 
 <br>
 
-### - **sh** = **bash**? <br>
+### - **SH** = **Bash**? <br>
 For a long time, `/bin/sh` used to point to `/bin/bash` on most GNU/Linux systems.
 As a result, it had almost become safe to ignore the difference between the two. But that started to change recently.
 
