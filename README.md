@@ -20,6 +20,7 @@
 	- [less](#--less)
 	- [ls](#--ls)
 	- [nice / renice & intruduction to processes](#--nice--renice--introduction-to-processes)
+ 	- [parallel](#--parallel)
 	- [paste](#--paste)
 	- [seq](#--seq)
 - [General](#general-back-to-top)
@@ -599,6 +600,17 @@ $ top
 ------------------------------------------------------------------------------
 - If you couldn't find the sched file, try recursively grepping using the command:
 $ grep -Hnri "prio" /proc/<PID>/
+```
+
+<hr>
+
+### - [Parallel](https://www.gnu.org/software/parallel/man.html)
+> `parallel` is a command to build and execute shell command lines from standard input in parallel.
+
+> Showing the number of CPU cores my computer have.
+```console
+$ nproc
+4
 ```
 
 <hr>
