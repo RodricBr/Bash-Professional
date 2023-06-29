@@ -641,6 +641,10 @@ $ seq 3 -1 1 | parallel sleep {} \; echo {}
   Instead of retreaving 321 it gives us 123 because the process that has "1" will finish first
   and be placed on top of the order, and so on with the following numbers (this show us that the command indeed executed in parallel)
 
+- PS: The backslash before the semicolon ( \; ) is used because ";" is one of list operators (&&, ||) for separating shell commands.
+  So to avoid special shell characters from interpretation, they need to be escaped with a backslash
+  to remove any special meaning for the next character read and for line continuation.
+
 ------------------------------------------------------------------------------
 $ seq 5 -1 1 | parallel sleep {} \; echo "{} \| {#} \| {%}"
 2 | 4 | 4
