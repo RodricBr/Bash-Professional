@@ -613,7 +613,7 @@ $ nproc
 4
 ```
 
-- Replacement Strings: <br>
+- [Replacement Strings](https://www.gnu.org/software/parallel/man.html#options): <br>
 > The parallel command contains a great amount of facilities that are generically called "Replacement String", and the main ones are the following: <br>
 ```console
 {}   - Input Line
@@ -622,9 +622,25 @@ $ nproc
 {.}  - Input line without extension
 {/}  - Basename of input line (Functions just like the "basename" command / removes the directory name only leaving the file name)
 {//} - Dirname of input line (Functions just like the "dirname" command / removes the file name only leaving the directory name)
-```
 
-Replacement strings are normally quoted, so special characters are not parsed by the shell. The exception is if the command starts with a replacement string; then the string is not quoted.
+There are more than that but for the purpose of this example I'll explain only those.
+If you're interested in seeing all the replacement strings, go to: https://www.gnu.org/software/parallel/man.html#options
+```
+> Replacement strings are usually quoted, so special characters are not parsed by the shell. <br>
+> The exception is if the command starts with a replacement string; then the string is not quoted. <br>
+
+> Examples:
+```console
+$ seq 3 -1 1 | parallel sleep {} \; echo {}
+1
+2
+3
+
+- Notice that seq 3 -1 1 by itself generates numbers from 1 to 3 in a reverse manner (-1) (output = 321)
+  But using parallel, it will cycle from sleep 3, then to 2 and finally 1, then we use echo to show the output data.
+  Instead of retreaving 321 it gives us 123 because the process that has "1" will finish first
+  and be placed on top of the order (this show us that the command indeed executed in parallel)
+```
 
 <hr>
 
