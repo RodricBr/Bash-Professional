@@ -660,6 +660,26 @@ $ seq 5 -1 1 | parallel sleep {} \; echo "{} \| {#} \| {%}"
 
 - Also notice that the pattern is not random. I'm not going to be able to explain exactly because
   it would be a mess, but looks for yourself and you'll understand.
+
+------------------------------------------------------------------------------
+$ parallel echo {.} ::: fake-directory/fake-file.extension
+fake-directory/fake-file
+
+- Removes the file extension
+
+------------------------------------------------------------------------------
+$ parallel echo {/} ::: fake-directory/fake-file.extension
+fake-file.extension
+
+- Works just like the "basename" command.
+
+------------------------------------------------------------------------------
+$ parallel echo {//} ::: fake-directory/fake-file.extension
+fake-directory
+
+- Works just like the "dirname" command.
+
+More examples: https://manpages.ubuntu.com/manpages/xenial/man1/parallel_tutorial.1.html
 ```
 
 <hr>
