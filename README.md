@@ -642,14 +642,20 @@ $ seq 3 -1 1 | parallel sleep {} \; echo {}
   and be placed on top of the order, and so on with the following numbers (this show us that the command indeed executed in parallel)
 
 ------------------------------------------------------------------------------
-$ seq 5 -1 1 | parallel sleep {} \; echo "N: {} \| Proc N: {#} \| Core N: {%}"
-N: 2 | Proc N: 4 | Core N: 4
-N: 3 | Proc N: 3 | Core N: 3
-N: 1 | Proc N: 5 | Core N: 4
-N: 4 | Proc N: 2 | Core N: 2
-N: 5 | Proc N: 1 | Core N: 1
+$ seq 5 -1 1 | parallel sleep {} \; echo "{} \| {#} \| {%}"
+2 | 4 | 4
+3 | 3 | 3
+1 | 5 | 4
+4 | 2 | 2
+5 | 1 | 1
 
 
+- Notice that "seq 5 -1 1" is the equivalent to 54321.
+  In this case we're doing the same as the example above, but instead, this time
+  we'll be outputting the input line/data ( {} ); process number ( {#} ) and the Core/CPU number ( {%} ).
+
+- Also notice that the pattern is not random. I'm not going to be able to explain exactly because
+  it would be a mess, but looks for yourself and you'll understand.
 ```
 
 <hr>
