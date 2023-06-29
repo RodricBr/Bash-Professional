@@ -637,9 +637,9 @@ $ seq 3 -1 1 | parallel sleep {} \; echo {}
 3
 
 - Notice that seq 3 -1 1 by itself generates numbers from 1 to 3 in a reverse manner (-1) (output = 321)
-  But using parallel, it will cycle from sleep 3, then to 2 and finally 1, then we use echo to show the output data.
+  But using parallel, it will cycle from sleep 3, to 2 and finally 1, then we use echo to show the output data.
   Instead of retreaving 321 it gives us 123 because the process that has "1" will finish first
-  and be placed on top of the order (this show us that the command indeed executed in parallel)
+  and be placed on top of the order, and so on with the following numbers (this show us that the command indeed executed in parallel)
 ```
 
 <hr>
