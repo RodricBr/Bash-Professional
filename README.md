@@ -616,9 +616,9 @@ $ nproc
 - [Replacement Strings](https://www.gnu.org/software/parallel/man.html#options): <br>
 > The parallel command contains a great amount of facilities that are generically called "Replacement String", and the main ones are the following: <br>
 ```console
-{}   - Input Line
+{}   - Input Line (This replacement string will be replaced by a full line read from the input source. The input source is normally stdin (standard input), but can also be given with --arg-file, :::, or ::::.)
 {#}  - Sequence number of the job to run / Sequential Process Number
-{%}  - Job slot number / Core or Thread Number that is running the process
+{%}  - Job slot number / Core or CPU Number that is running the process
 {.}  - Input line without extension
 {/}  - Basename of input line (Functions just like the "basename" command / removes the directory name only leaving the file name)
 {//} - Dirname of input line (Functions just like the "dirname" command / removes the file name only leaving the directory name)
@@ -636,10 +636,20 @@ $ seq 3 -1 1 | parallel sleep {} \; echo {}
 2
 3
 
-- Notice that seq 3 -1 1 by itself generates numbers from 1 to 3 in a reverse manner (-1) (output = 321)
+- Notice that seq 3 -1 1 by itself generates numbers from 1 to 3 in a reverse manner (-1) (output == 321)
   But using parallel, it will cycle from sleep 3, to 2 and finally 1, then we use echo to show the output data.
   Instead of retreaving 321 it gives us 123 because the process that has "1" will finish first
   and be placed on top of the order, and so on with the following numbers (this show us that the command indeed executed in parallel)
+
+------------------------------------------------------------------------------
+$ seq 5 -1 1 | parallel sleep {} \; echo "N: {} \| Proc N: {#} \| Core N: {%}"
+N: 2 | Proc N: 4 | Core N: 4
+N: 3 | Proc N: 3 | Core N: 3
+N: 1 | Proc N: 5 | Core N: 4
+N: 4 | Proc N: 2 | Core N: 2
+N: 5 | Proc N: 1 | Core N: 1
+
+
 ```
 
 <hr>
