@@ -607,11 +607,22 @@ $ grep -Hnri "prio" /proc/<PID>/
 ### - [Parallel](https://www.gnu.org/software/parallel/man.html)
 > `parallel` is a command to build and execute shell command lines from standard input in parallel.
 
-> Showing the number of CPU cores my computer have.
+> Showing the number of CPU cores my computer have. (This will be useful for how many cores I can use inside of a parallel command)
 ```console
 $ nproc
 4
 ```
+
+- Replacement Strings: <br>
+> The parallel command contains a great amount of facilities that are generically called "Replacement String", and the main ones are the following: <br>
+```console
+{}  - Input Line
+{#} - Sequence number of the job to run / Process Number
+{%} - Job slot number / Core or Thread Number that is running the process
+{.} - Input line without extension.
+```
+
+Replacement strings are normally quoted, so special characters are not parsed by the shell. The exception is if the command starts with a replacement string; then the string is not quoted.
 
 <hr>
 
