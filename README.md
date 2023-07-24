@@ -685,6 +685,9 @@ More examples: https://manpages.ubuntu.com/manpages/xenial/man1/parallel_tutoria
 > Using parallel to run `ping` command:
 ```console
 $ parallel -j250 'timeout 2 ping -c 1 10.0.0.{1} >/dev/null && echo 10.0.0.{1}' ::: {1..255}
+10.0.0.1
+10.0.0.148
+10.0.0.198
 
 - In this example, we're using the "-j" parallel flag which limits
   the number of jobs that we can run at the same time.
