@@ -682,6 +682,20 @@ fake-directory
 More examples: https://manpages.ubuntu.com/manpages/xenial/man1/parallel_tutorial.1.html
 ```
 
+> Another cool example of using parallel alongside other commands:
+```console
+$ parallel -j250 'timeout 2 ping -c 1 10.0.0.{1} >/dev/null && echo 10.0.0.{1}' ::: {1..255}
+
+- In this example, we're using the "-j" parallel flag which limits
+  the number of jobs that we can run at the same time.
+
+- The command on which we'll execute in parallel is written between single quotes. (We could've used double quotes as well)
+  The given command will ping to the local IPv4 address of 10.0.0.1 to 10.0.0.255
+  with a 2 second timeout to check if the IPv4 is alive or not.
+  Notice that I am enumarating the curly brackets to be later used by parallel
+  as a Brace Expansion. (Ex: {1}, {2} --> ::: {a-z}, {0..9})
+```
+
 <hr>
 
 ### - [Paste](https://linux.die.net/man/1/paste)
