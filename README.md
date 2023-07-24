@@ -682,7 +682,7 @@ fake-directory
 More examples: https://manpages.ubuntu.com/manpages/xenial/man1/parallel_tutorial.1.html
 ```
 
-> Another cool example of using parallel alongside other commands:
+> Using parallel to run `ping` command:
 ```console
 $ parallel -j250 'timeout 2 ping -c 1 10.0.0.{1} >/dev/null && echo 10.0.0.{1}' ::: {1..255}
 
