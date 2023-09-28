@@ -413,7 +413,7 @@ $ compgen -c
 
 ------------------------------------------------------------------------------
 $ compgen -b
-- Shows a list of all builtins
+- Shows a list of all builtins in the system
 
 ------------------------------------------------------------------------------
 $ compgen -v
@@ -424,6 +424,10 @@ $ compgen -v
 $ compgen -a
 - Shows a list of all aliases defined in the system, counting those that you
   defined manually.
+
+------------------------------------------------------------------------------
+$ compgen -k
+- Shows a list of all the keywords in the system
 
 # Flags: "-abcdefgjksuv"
 ```
