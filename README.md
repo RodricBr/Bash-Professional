@@ -1187,7 +1187,7 @@ EOF
 ```
 
 - Image example: <br>
-<img src="./assets/here-document.png">
+<img src="./assets/here-documents.png">
 
 <!--
 https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
