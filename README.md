@@ -1172,7 +1172,7 @@ a shell script using ed text editor.
 w
 EndOfCommand
 ```
-> Notice how I'm using **i**, **.** and **w** on the sequence. Those letters tell ed to first: start insert mode, then proceeds to write the contents, and writes/saves the file. <br>
+> Notice how I'm using "**i**", "**.**" and "**w**" on the sequence. Those strings tells "ed" to first: start insert mode, then proceeds to write the contents, and writes/saves the file. <br>
 
 - We could also do something similar using vim: <br>
 ```bash
@@ -1185,6 +1185,9 @@ This file was created automatically from
 a shell script using vim text editor.
 EOF
 ```
+
+- Image example: <br>
+<img src="./assets/here-document.png">
 
 <!--
 https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
