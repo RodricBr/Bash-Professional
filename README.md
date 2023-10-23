@@ -1120,7 +1120,7 @@ command >> out.txt
 
 <img src="./assets/here-strings-difference.png">
 
-- `<<[-]` - Here Documents : Uses a form of [I/O redirection](https://tldp.org/LDP/abs/html/io-redirection.html#IOREDIRREF) to feed a command list to an interactive program or a command, such as **ftp**, **cat**, or the **ex** text editor. It is also known as a special-purpose code block.
+- `<<[-]` - Here Documents : Uses a form of [I/O redirection](https://tldp.org/LDP/abs/html/io-redirection.html#IOREDIRREF) to feed a command list to an interactive program or a command, such as **ftp**, **cat**, or the **ex** text editor. It is also known as a special-purpose code block. (The space after the double "less than" symbols is not necessary)
 ```
 COMMAND <<InputComesFromHERE
 ...
@@ -1145,8 +1145,8 @@ command #2
 LimitString
 ```
 
-- Practicle example: Sends message to everyone logged in the terminal (using the `wall` command).
-```
+- Practical example 1.0: Sends message to everyone logged in the terminal (using the `wall` command). <br>
+```bash
 #!/bin/bash
 
 wall <<xxxxPizzaInformationxxxx
@@ -1157,6 +1157,33 @@ E-mail your noontime orders for pizza to the system administrator.
 xxxxPizzaInformationxxxx
 
 exit
+```
+
+- Practical example 1.1: Adding content to an existing file using the command `ed`, which is a text editor. <br>
+```bash
+#!/bin/bash
+
+filename="here-documents.txt"
+ed -s "$filename" <<EndOfCommand
+i
+This file was created automatically from
+a shell script using ed text editor.
+.
+w
+EndOfCommand
+```
+> Notice how I'm using **i**, **.** and **w** on the sequence. Those letters tell ed to first: start insert mode, then proceeds to write the contents, and writes/saves the file. <br>
+
+- We could also do something similar using vim: <br>
+```bash
+#!/bin/bash
+
+filename="here-documents.txt"
+
+vim -c ":wq! $filename" - << EOF
+This file was created automatically from
+a shell script using vim text editor.
+EOF
 ```
 
 <!--
