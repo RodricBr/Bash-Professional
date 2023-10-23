@@ -346,9 +346,23 @@ $ cat -n script.sh
      2
      3  echo -e "Hello, World\n"
      4  echo -e "\nThis is a loop:"
-     5  for ((X_ == 1; X_ <= 10; X_ ++)); do
-     6    echo -e "$X_"
-     7  done
+     5
+     6  for ((X_ == 1; X_ <= 10; X_ ++)); do
+     7    echo -e "$X_"
+     8  done
+```
+
+> Using the `-b, --number-nonblank` option flag the output will number only nonempty output lines. <br>
+```console
+$ cat -b script.sh
+     1  #!/usr/bin/bash
+     
+     2  echo -e "Hello, World\n"
+     3  echo -e "\nThis is a loop:"
+     
+     4  for ((X_ == 1; X_ <= 10; X_ ++)); do
+     5    echo -e "$X_"
+     6  done
 ```
 
 <hr>
