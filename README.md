@@ -1120,7 +1120,44 @@ command >> out.txt
 
 <img src="./assets/here-strings-difference.png">
 
-- `<<[-]` - Here Documents : Uses a form of I/O redirection to feed a command list to an interactive program or a command, such as **ftp**, **cat**, or the **ex** text editor. It is also a special-purpose code block.
+- `<<[-]` - Here Documents : Uses a form of [I/O redirection](https://tldp.org/LDP/abs/html/io-redirection.html#IOREDIRREF) to feed a command list to an interactive program or a command, such as **ftp**, **cat**, or the **ex** text editor. It is also known as a special-purpose code block.
+```
+COMMAND <<InputComesFromHERE
+...
+...
+...
+InputComesFromHERE
+```
+
+> A **limit string** delineates (frames) the command list. The special symbol `<<` precedes the limit string. This has the effect of redirecting the output of a command block into the stdin of the program or command. It is similar to `interactive-program < command-file`, where **command-file* contains: <br>
+```
+command #1
+command #2
+...
+```
+
+> The here document equivalent looks like this: <br>
+```
+interactive-program <<LimitString
+command #1
+command #2
+...
+LimitString
+```
+
+- Practicle example: Sends message to everyone logged in the terminal (using the `wall` command).
+```
+#!/bin/bash
+
+wall <<xxxxPizzaInformationxxxx
+E-mail your noontime orders for pizza to the system administrator.
+    (Add an extra dollar for anchovy or mushroom topping.)
+# Additional message text goes here.
+# Note: 'wall' prints comment lines.
+xxxxPizzaInformationxxxx
+
+exit
+```
 
 <!--
 https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators
