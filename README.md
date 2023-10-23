@@ -26,7 +26,8 @@
 - [General](#general-back-to-top)
 	- [File Permissions](#--file-permissions)
 	- [Control Operators](#--control-operators)
-	- [Redirection Operators](#--redirection-operators-no-images-since-output-is-not-shownvisible)
+	- [Redirection Operators](#--redirection-operators)
+ 		- Includes: **stdin**, **stdout**, **stderr**; **<**, **<>**, **>**, **>|**, **>>**, **>&**, **here strings**, **here documents**.
 	- [Linked Files: Symbolic Links / Hard Links](#--linked-files--symbolic-links--hard-links-back-to-top)
 	- [Shell Expansions / String Manipulation](#string-manipulation-back-to-top)
 		- [Brace Expansion](#--brace-expansion--)
